@@ -5,8 +5,9 @@
   "themes": ["./themes/portfolio", "./themes/tests"],
   "mappings": {
     "wp-content/uploads": "./uploads",
-    "wp-content/ai1wn-backups": "./ai1wn-backups",
-    "sql": "./sql"
+    "wp-content/ai1wm-backups": "./ai1wm-backups",
+    "sql": "./sql",
+    "wp-content/plugins": "./plugins"
   },
   "plugins": [
     "https://downloads.wordpress.org/plugin/advanced-custom-fields.zip",

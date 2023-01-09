@@ -17,9 +17,12 @@
     "dev": "run-p watch:{server,scss,postcss}",
     "build": "run-s task:{compressedScss,postcss}",
     "wp-env:start": "wp-env start",
+    "wp-env:update": "wp-env start --update",
     "wp-env:stop": "wp-env stop",
     "wp-env:export": "wp-env run cli wp db export sql/import.sql",
-    "wp-env:import": "wp-env run cli wp db import sql/import.sql"
+    "wp-env:import": "wp-env run cli wp db import sql/import.sql",
+    "wp-env:backup": "yarn run wp-env run cli wp ai1wm backup --exclude-spam-comments --exclude-post-revisions  --exclude-inactive-themes --exclude-muplugins  --exclude-inactive-plugins --exclude-cache",
+    "wp-env:restore": "yarn run wp-env run cli wp ai1wm restore"
   },
   "devDependencies": {
     "@wordpress/env": "^5.9.0",
