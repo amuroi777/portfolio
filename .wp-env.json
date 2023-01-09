@@ -1,0 +1,17 @@
+{
+  "port": 7676,
+  "env": { "tests": { "port": 7878 } },
+  "core": "https://ja.wordpress.org/latest-ja.zip",
+  "themes": ["./themes/portfolio", "./themes/tests"],
+  "mappings": {
+    "wp-content/uploads": "./uploads",
+    "wp-content/ai1wn-backups": "./ai1wn-backups",
+    "sql": "./sql"
+  },
+  "plugins": [
+    "https://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+    "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.zip",
+    "https://downloads.wordpress.org/plugin/all-in-one-wp-migration.zip",
+    "https://downloads.wordpress.org/plugin/duplicate-post.zip"
+  ]
+}
