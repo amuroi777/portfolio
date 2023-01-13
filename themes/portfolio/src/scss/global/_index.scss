@@ -1,0 +1,9 @@
+// global/_index.scss
+
+@forward 'mixin';
+
+//global/variables/
+@forward 'variables/color';
+@forward 'variables/columns';
+@forward 'variables/structure';
+@forward 'variables/typography';

@@ -1,27 +1,29 @@
+// object/component/_components.scss
+
 /* Navigation
 --------------------------------------------- */
-@import "navigation/navigation";
+@forward "navigation/navigation";
 
 /* Posts and pages
 --------------------------------------------- */
-@import "content/posts-and-pages";
+@forward "content/posts-and-pages";
 
 /* Comments
 --------------------------------------------- */
-@import "comments/comments";
+@forward "comments/comments";
 
 /* Widgets
 --------------------------------------------- */
-@import "widgets/widgets";
+@forward "widgets/widgets";
 
 /* Media
 --------------------------------------------- */
-@import "media/media";
+@forward "media/media";
 
 /* Captions
 --------------------------------------------- */
-@import "media/captions";
+@forward "media/captions";
 
 /* Galleries
 --------------------------------------------- */
-@import "media/galleries";
+@forward "media/galleries";
