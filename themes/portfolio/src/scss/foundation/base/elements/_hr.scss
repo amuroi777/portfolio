@@ -1,3 +1,5 @@
+@use '../global/' as var;
+
 hr {
 	background-color: $color__background-hr;
 	border: 0;
