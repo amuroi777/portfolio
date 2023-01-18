@@ -34,28 +34,25 @@ Version: 1.0.0
 
 --------------------------------------------------------------*/
 
-// abstracts
-@use "abstracts";
 
 // generic
 @use "generic";
 
 // foundation/base
-@use "foundation/base";
+@use "foundation";
 
-// global/variables
-@use "global/variables";
-
-@use "utilities/alignments";
+// layout
+@use "layout";
 
 // object/component
 @use "object/component";
 
 // object/project
-@use "object/project";
+// @use "object/project";
 
 // object/utility
 @use "object/utility";
+
 
 
 /*--------------------------------------------------------------

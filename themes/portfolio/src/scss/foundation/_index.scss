@@ -2,21 +2,21 @@
 
 /* Typography
 --------------------------------------------- */
-@forward "typography/typography";
+// @forward "typography";
 
 /* Elements
 --------------------------------------------- */
-@forward "elements/body";
-@forward "elements/hr";
-@forward "elements/lists";
-@forward "elements/media";
-@forward "elements/tables";
+@forward "body";
+@forward "hr";
+@forward "lists";
+@forward "media";
+@forward "tables";
 
 /* Links
 --------------------------------------------- */
-@forward "elements/links";
+@forward "links";
 
 /* Forms
 --------------------------------------------- */
-@forward "elements/buttons";
-@forward "elements/fields";
+@forward "buttons";
+@forward "fields";
