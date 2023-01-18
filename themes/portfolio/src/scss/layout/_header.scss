@@ -1,0 +1,194 @@
+@use '../global/' as var;
+
+/* ==========================
+header
+=========================== */
+.l-header {
+	padding-top: 22px;
+
+	&__wrapper {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo-inner {
+		display: inline-block;
+		width: 198px;
+
+		@include var.mq(xl) {
+			width: 288px;
+			padding-left: 20px;
+		}
+	}
+
+	&__logo-new {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__button-download {
+		display: none;
+
+		@include var.mq(xl) {
+			display: inline-block;
+			padding: 24px 32px;
+			color: var.$c-main;
+			border: 1px solid var.$c-main;
+		}
+
+		&:hover {
+			background: var.$c-main;
+			color: var.$c-main-thin;
+			transition: 1s;
+		}
+	}
+
+	&__button-contact {
+		display: none;
+		color: var.$c-main-thin;
+
+		@include var.mq(xl) {
+			display: inline-block;
+			padding: 24px 46px;
+			background: var.$c-main;
+		}
+	}
+}
+
+.l-header-nav {
+	display: none;
+
+	@include var.mq(xl) {
+		display: block;
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__link {
+		display: none;
+
+		@include var.mq(xl) {
+			position: relative;
+			display: block;
+			font-size: 1.4rem;
+			line-height: 1.7142;
+		}
+	}
+
+	&__item {
+		&:not(:last-child, :nth-last-child(3), :nth-last-child(2)) {
+			margin-right: 46px;
+		}
+
+		&:nth-last-child(2) {
+			margin-right: 10px;
+			margin-left: 32px;
+		}
+
+		&:not(:first-of-type) {
+			.l-header-nav__link {
+				&::before {
+					position: absolute;
+					top: 50%;
+					left: -30px;
+					content: '/';
+					transform: translateY(-50%);
+				}
+			}
+		}
+	}
+}
+
+.c-button {
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	appearance: none;
+}
+
+.l-header-hamburger {
+	position: fixed;
+	left: 80%;
+	z-index: 3;
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+
+	@include var.mq(xl) {
+		display: none;
+	}
+
+	&__line1,
+	&__line2,
+	&__line3 {
+		position: absolute;
+		top: 0;
+		left: 10px;
+		width: 27px;
+		height: 2.75px;
+		background: var.$c-main;
+		transition: 0.3s;
+	}
+
+	&__line1 {
+		top: 0;
+	}
+
+	&__line2 {
+		top: 7px;
+	}
+
+	&__line3 {
+		top: 14px;
+	}
+}
+
+// ハンバーガーメニュークリック時
+.is-active {
+	z-index: 4;
+
+	.l-header-hamburger__line1 {
+		top: 0;
+		right: 0%;
+		background: var.$c-main-thin;
+		transform: rotate(-135deg);
+	}
+
+	.l-header-hamburger__line2 {
+		display: none;
+	}
+
+	.l-header-hamburger__line3 {
+		top: 0;
+		right: 0%;
+		z-index: 4;
+		background: var.$c-main-thin;
+		transform: rotate(135deg);
+	}
+
+	.l-header-hamburger__visually-hidden {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		white-space: nowrap;
+		border: 0;
+	}
+}
