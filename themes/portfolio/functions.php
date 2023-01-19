@@ -138,8 +138,9 @@ add_action( 'widgets_init', 'portfolio_widgets_init' );
  * Enqueue scripts and styles.
  */
 function portfolio_scripts() {
-	wp_enqueue_style( 'portfolio-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'portfolio-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'my', get_template_directory_uri() . '/assets/css/main.css', array(), filemtime( get_theme_file_path( './assets/css/main.css' ) ), 'all' );
+	wp_enqueue_script( 'my', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), filemtime( get_theme_file_path( 'js/script.js' ) ), true );
+	wp_style_add_data( 'my', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 

@@ -1,11 +1,11 @@
-.site {
-	display: grid;
-	grid-template-columns: ($size__site-sidebar) auto;
-	grid-template-areas:
-		"header header"
-		"sidebar main"
-		"footer footer";
-}
+// .site {
+// 	display: grid;
+// 	grid-template-columns: ($size__site-sidebar) auto;
+// 	grid-template-areas:
+// 		"header header"
+// 		"sidebar main"
+// 		"footer footer";
+// }
 
 .site-header {
 	grid-area: header;
