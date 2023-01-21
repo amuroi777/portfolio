@@ -1,0 +1,120 @@
+@use '../global/' as var;
+
+/* 基本設定
+===================================== */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: var.$font-family-default;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.45;
+	list-style: none;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.util-ttl {
+	font-family: var.$font-family-english;
+	font-size: 3rem;
+	font-weight: 600;
+
+	@include var.mq('sp') {
+		font-size: 3.6rem;
+	}
+}
+
+.util-linkBox {
+	@include var.mq('sp') {
+		text-align: center;
+	}
+}
+
+.util-link {
+	position: relative;
+	display: block;
+	padding: 0.8em 0;
+	font-family: var.$font-family-english;
+	font-size: 2rem;
+	font-weight: 600;
+	color: #3e3e3e;
+	text-align: center;
+	letter-spacing: 0.2em;
+	border: solid 1px #3e3e3e;
+	transition: background-color 0.2s, color 0.2s;
+
+	&.mod-light {
+		color: #fff;
+		border-color: #fff;
+	}
+
+	@include var.mq('sp') {
+		&.mod-light:hover {
+			color: #3e3e3e;
+			background: #fff;
+		}
+
+		&:hover {
+			color: #fff;
+			background: #3e3e3e;
+		}
+	}
+
+	@include var.mq('sp') {
+		max-width: 268px;
+		padding-top: 13px;
+		padding-bottom: 13px;
+		margin: 0 auto;
+		font-size: 1.8rem;
+	}
+}
+
+.font-italic {
+	font-family: 'Fira Sans', sans-serif;
+	font-style: italic;
+}
+
+.section-inner {
+	margin: 0 90px;
+
+	@include var.mq(sp) {
+		margin: 0 30px;
+	}
+}
+
+.section-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #023e78;
+
+	@include var.mq(sp) {
+		display: block;
+	}
+}
+
+.is-sp {
+	display: block;
+
+	@include var.mq(xl) {
+		display: none;
+	}
+}
+
+li {
+	list-style: none;
+}
+
