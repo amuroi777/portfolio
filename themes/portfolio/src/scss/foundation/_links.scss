@@ -1,24 +1,23 @@
 @use '../global/' as var;
 
 a {
-	color: var.$color__link;
-
-	&:visited {
-		color: var.$color__link-visited;
-	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		color: var.$color__link-hover;
-	}
+			opacity: 0.4;
+			transition: all 0.5s;
+		}
 
-	&:focus {
-		outline: thin dotted;
-	}
-
-	&:hover,
-	&:active {
-		outline: 0;
-	}
+	
 }
+
+// 	&:focus {
+// 		outline: thin dotted;
+// 	}
+
+// 	&:hover,
+// 	&:active {
+// 		outline: 0;
+// 	}
+// }
