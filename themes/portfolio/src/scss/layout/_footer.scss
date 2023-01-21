@@ -1,0 +1,112 @@
+@use '../global/' as var;
+
+/* ==========================
+footer
+=========================== */
+.l-footer {
+	padding: 22px 0;
+	background: var.$c-bg-footer;
+
+	&__wrapper {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+
+	&__area {
+		@include var.mq(xl) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;	
+		}
+	}
+
+	&__title {
+		@include var.mq(xl) {
+			font-size: 5.2rem;
+			font-weight: 700;	
+		}
+	}
+
+   &__contact {
+	  @include var.mq(xl) {
+		  margin-top: 20px;
+		  font-weight: 700;
+		  font-size: 2.6rem;
+		  position: relative;
+   
+		  &::after {
+		   content: "";
+		   position: absolute;
+		   top: 110%;
+		   left: 0;
+		   height: 2px;
+		   width: 25rem;
+		   transform: translateY(-50%);
+		   background: var.$c-text-color;
+		   z-index: 2;
+		  }
+	  }
+   }
+
+   &__bottom-area {
+
+	@include var.mq(xl) {
+		text-align: right;
+		margin-top: 141px;
+	 }
+   }
+
+   &__privacy {
+
+	@include var.mq(xl) {
+		font-size: 1.4rem;
+	}
+   }
+
+   &__copyright {
+	@include var.mq(xl) {
+		font-weight: 700;
+		padding-top: 14px;	
+	}
+   }
+}
+
+.l-footer-nav {
+	display: none;
+	color: #000;
+
+	@include var.mq(xl) {
+		display: block;
+		
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__link {
+		display: none;
+
+		@include var.mq(xl) {
+			position: relative;
+			display: block;
+			font-size: 3.2rem;
+			line-height: 1.7142;
+		}
+	}
+
+	&__item {
+		font-weight: 700;
+
+		&:not(:last-child, :nth-last-child(3), :nth-last-child(2)) {
+			margin-right: 2.2rem;
+		}
+
+		&:nth-last-child(2) {
+			margin-right: 24px;
+			margin-left: 24px;
+		}
+	}
+}
+
