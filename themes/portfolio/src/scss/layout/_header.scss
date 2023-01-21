@@ -17,53 +17,15 @@ header
 		justify-content: space-between;
 	}
 
-	&__logo-inner {
-		display: inline-block;
-		width: 198px;
-
-		@include var.mq(xl) {
-			width: 288px;
-			padding-left: 20px;
-		}
-	}
-
-	&__logo-new {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-
-	&__button-download {
-		display: none;
-
-		@include var.mq(xl) {
-			display: inline-block;
-			padding: 24px 32px;
-			color: var.$c-main;
-			border: 1px solid var.$c-main;
-		}
-
-		&:hover {
-			background: var.$c-main;
-			color: var.$c-main-thin;
-			transition: 1s;
-		}
-	}
-
-	&__button-contact {
-		display: none;
-		color: var.$c-main-thin;
-
-		@include var.mq(xl) {
-			display: inline-block;
-			padding: 24px 46px;
-			background: var.$c-main;
-		}
+	&__title {
+		font-size: 3.2rem;
+		font-weight: 700;
 	}
 }
 
 .l-header-nav {
 	display: none;
+	color: #000;
 
 	@include var.mq(xl) {
 		display: block;
@@ -80,31 +42,20 @@ header
 		@include var.mq(xl) {
 			position: relative;
 			display: block;
-			font-size: 1.4rem;
+			font-size: 2.2rem;
 			line-height: 1.7142;
 		}
 	}
 
 	&__item {
+		font-weight: 700;
 		&:not(:last-child, :nth-last-child(3), :nth-last-child(2)) {
-			margin-right: 46px;
+			margin-right: 2.2rem;
 		}
 
 		&:nth-last-child(2) {
-			margin-right: 10px;
-			margin-left: 32px;
-		}
-
-		&:not(:first-of-type) {
-			.l-header-nav__link {
-				&::before {
-					position: absolute;
-					top: 50%;
-					left: -30px;
-					content: '/';
-					transform: translateY(-50%);
-				}
-			}
+			margin-right: 24px;
+			margin-left: 24px;
 		}
 	}
 }
@@ -139,7 +90,7 @@ header
 		left: 10px;
 		width: 27px;
 		height: 2.75px;
-		background: var.$c-main;
+		// background: var.$c-main;
 		transition: 0.3s;
 	}
 
@@ -163,7 +114,7 @@ header
 	.l-header-hamburger__line1 {
 		top: 0;
 		right: 0%;
-		background: var.$c-main-thin;
+		// background: var.$c-main-thin;
 		transform: rotate(-135deg);
 	}
 
@@ -175,7 +126,7 @@ header
 		top: 0;
 		right: 0%;
 		z-index: 4;
-		background: var.$c-main-thin;
+		// background: var.$c-main-thin;
 		transform: rotate(135deg);
 	}
 
