@@ -951,6 +951,62 @@ footer
   grid-template-areas: "header" "main" "footer";
 }
 
+/* ==========================
+fv
+=========================== */
+@media (min-width: 1200px) {
+  .p-index-fv__hero {
+    writing-mode: vertical-rl;
+    font-size: 2.6rem;
+    font-weight: 700;
+    width: 50%;
+    position: relative;
+  }
+}
+@media (min-width: 1200px) {
+  .p-index-fv__hero-text:not(:first-child) {
+    padding-right: 19px;
+  }
+}
+@media (min-width: 1200px) {
+  .p-index-fv__hero-sub {
+    position: absolute;
+    top: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .p-index-fv__hero-sub-text {
+    font-size: 9.5rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1200px) {
+  .p-index-fv__hero-accent {
+    position: absolute;
+    background: url(../../img/circle.png) no-repeat center center/cover;
+    width: 211px;
+    height: 35.33px;
+    left: 37%;
+    top: 90%;
+    z-index: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .p-index-fv__hero-bottom {
+    position: absolute;
+    width: 211px;
+    height: 35.33px;
+    left: 77%;
+    top: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .p-index-fv__hero-bottom-text {
+    font-size: 7rem;
+    font-weight: 600;
+  }
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   border: 0;

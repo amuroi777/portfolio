@@ -13,7 +13,7 @@ get_header();
 ?>
 
 <?php
-esc_html( get_template_part( 'template-parts/front-page/' ) );
+esc_html( get_template_part( 'template-parts/front-page/fv' ) );
 ?>
 
 
