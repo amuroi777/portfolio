@@ -1,0 +1,87 @@
+@use '../../../global/' as var;
+
+/* ==========================
+ profile
+=========================== */
+.p-index-profile {
+	
+	&__wrapper {
+        max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	&__container {
+
+	}
+
+	&__title {
+		
+	}
+
+	&__title-n {
+		font-size: 2rem;
+		font-weight: 700;
+	}
+
+	&__title-main {
+		font-size: 5.2rem;
+		font-weight: 700;
+	}
+
+	&__title-sub {
+		font-size: 2.6rem;
+		font-weight: 700;
+	}
+
+	&__p-area {
+		width: 684px;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	&__img {
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		
+	}
+
+
+	&__button {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin: 0 auto;
+		padding: 2em 4.5em;
+		color: #333;
+		transition: 0.3s;
+		font-size: 2.4rem;
+		font-weight: 700;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: calc((50% - 2px));
+			right: 1em;
+			transform: translateY(calc(-50% - 2px)) rotate(30deg);
+			width: 12px;
+			height: 2px;
+			background-color: var.$c-text-color;
+			transition: 0.3s;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 1em;
+			transform: translateY(-50%);
+			width: 73px;
+			height: 2px;
+			background-color: var.$c-text-color;
+			transition: 0.3s;
+		}
+	}
+}
