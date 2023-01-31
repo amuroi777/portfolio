@@ -1,0 +1,72 @@
+@use '../../../global/' as var;
+
+/* ==========================
+ skils
+=========================== */
+.p-index-skils {
+	
+	&__wrapper {
+        max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	&__container {
+
+	}
+
+	&__title {
+		
+	}
+
+	&__title-n {
+		font-size: 2rem;
+		font-weight: 700;
+	}
+
+	&__title-main {
+		font-size: 5.2rem;
+		font-weight: 700;
+	}
+
+	&__title-sub {
+		font-size: 2.6rem;
+		font-weight: 700;
+	}
+
+	&__p-area {
+		width: 684px;
+		max-width: 100%;
+		margin: 62px auto;
+	}
+
+	&__text {
+		margin-bottom: 60px;
+	}
+
+	&__text-main {
+		font-size: 2.4rem;
+		font-weight: 700;
+		margin: 12px;
+	}
+
+	&__text-content {
+		border-top: 1px solid var.$c-text-color;
+		padding-top: 18px;
+	}
+
+	&__text-sub {
+		margin-top: 32px;
+	}
+
+	&__text-sub-title {
+      font-size: 1.6rem;
+	  font-weight: 700;
+	  margin-bottom: 10px;
+	}
+
+	&__text-sub-content {
+      font-size: 1.4rem;
+	  font-weight: 700;
+	}
+}
