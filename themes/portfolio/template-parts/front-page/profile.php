@@ -1,6 +1,6 @@
 <?php
 /**
- * トップページテンプレート(profile)
+ * Template Name: トップページテンプレート(profile)
  *
  * @package portfolio
  * @since 1.0.0

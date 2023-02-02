@@ -12,6 +12,7 @@
     "wp-content/plugins": "./plugins"
   },
   "plugins": [
+    "https://downloads.wordpress.org/plugin/custom-post-type-ui.zip",
     "https://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
     "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.zip",
     "https://downloads.wordpress.org/plugin/all-in-one-wp-migration.zip",

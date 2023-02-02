@@ -1,6 +1,6 @@
 <?php
 /**
- * トップページテンプレート(fv)
+ * Template Name: トップページテンプレート(fv)
  *
  * @package portfolio
  * @since 1.0.0

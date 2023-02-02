@@ -1,6 +1,6 @@
 <?php
 /**
- * トップページテンプレート(skils)
+ * Template Name: トップページテンプレート(skils)
  *
  * @package portfolio
  * @since 1.0.0

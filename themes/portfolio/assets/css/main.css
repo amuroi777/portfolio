@@ -1094,6 +1094,37 @@ fv
   font-weight: 700;
 }
 
+/* ==========================
+works
+=========================== */
+.p-index-works__wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.p-index-works__title-n {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.p-index-works__title-main {
+  font-size: 5.2rem;
+  font-weight: 700;
+}
+.p-index-works__title-sub {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.p-index-works__card-items {
+  margin-top: 80px;
+  display: flex;
+}
+.p-index-works__card-item {
+  width: calc(33.3% - 12px);
+  background: #fff;
+  padding: 16px;
+  border-radius: 4px;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   border: 0;
