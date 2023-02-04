@@ -6,15 +6,48 @@ fv
 .p-index-fv {
 	// background: url(../../img/dot.png) no-repeat center center / cover;
 	// height: 700px;
-	
+	margin-top: 32px;
 
 	&__container {
-	
+		display: grid;
+		justify-items: center;
+		// align-items: center;
+		grid-template-areas:
+			"title";
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		height: 720px;
 	}
 
-	&__hero-area {
-		
+	&__title {
+		@include var.mq(xl) {
+			writing-mode: vertical-rl;
+			font-size: 2.6rem;
+			font-weight: 700;
+			grid-row: 1 / end;
+			grid-column: 2;
+			// background: red;
+			line-height: 1.8;
+			letter-spacing: 10px;
+			font-feature-settings: 'case' on, 'vert' on, 'kern' off;
+		}
 	}
+
+	&__job {
+		font-size: 9.5rem;
+		font-weight: 700;
+		grid-column: 1;
+		grid-row: 4/5;
+	}
+
+	&__author {
+		font-size: 7rem;
+		font-weight: 600;
+		grid-column: 3;
+		grid-row: end;
+	}
+
+	&__hero-area {}
 
 	&__hero {
 
@@ -62,7 +95,7 @@ fv
 			left: 37%;
 			top: 90%;
 			z-index: 1;
-		}		
+		}
 	}
 
 	&__hero-bottom {
@@ -80,8 +113,15 @@ fv
 
 		@include var.mq(xl) {
 			font-size: 7rem;
-			font-weight: 600;	
+			font-weight: 600;
 		}
 	}
 
+}
+
+.u-line-break {
+	&::before {
+		content: "\A";
+		white-space: pre;
+	}
 }

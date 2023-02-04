@@ -5,6 +5,7 @@ header
 =========================== */
 .l-header {
 	padding-top: 22px;
+	height: 95px;
 
 	&__wrapper {
 		padding-right: 16px;
@@ -49,6 +50,7 @@ header
 
 	&__item {
 		font-weight: 700;
+
 		&:not(:last-child, :nth-last-child(3), :nth-last-child(2)) {
 			margin-right: 2.2rem;
 		}

@@ -705,6 +705,7 @@ header
 =========================== */
 .l-header {
   padding-top: 22px;
+  height: 95px;
 }
 .l-header__wrapper {
   padding-right: 16px;
@@ -954,6 +955,41 @@ footer
 /* ==========================
 fv
 =========================== */
+.p-index-fv {
+  margin-top: 32px;
+}
+.p-index-fv__container {
+  display: grid;
+  justify-items: center;
+  grid-template-areas: "title";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 720px;
+}
+@media (min-width: 1200px) {
+  .p-index-fv__title {
+    writing-mode: vertical-rl;
+    font-size: 2.6rem;
+    font-weight: 700;
+    grid-row: 1/end;
+    grid-column: 2;
+    line-height: 1.8;
+    letter-spacing: 10px;
+    font-feature-settings: "case" on, "vert" on, "kern" off;
+  }
+}
+.p-index-fv__job {
+  font-size: 9.5rem;
+  font-weight: 700;
+  grid-column: 1;
+  grid-row: 4/5;
+}
+.p-index-fv__author {
+  font-size: 7rem;
+  font-weight: 600;
+  grid-column: 3;
+  grid-row: end;
+}
 @media (min-width: 1200px) {
   .p-index-fv__hero {
     writing-mode: vertical-rl;
@@ -1005,6 +1041,11 @@ fv
     font-size: 7rem;
     font-weight: 600;
   }
+}
+
+.u-line-break::before {
+  content: "\a";
+  white-space: pre;
 }
 
 /* Text meant only for screen readers. */

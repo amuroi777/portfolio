@@ -11,10 +11,12 @@
 <?php
 get_header();
 ?>
+<main>
+	<?php
+	esc_html( get_template_part( 'template-parts/front-page/fv' ) );
+	?>
 
-<?php
-esc_html( get_template_part( 'template-parts/front-page/fv' ) );
-?>
+</main>
 
 
 <?php
