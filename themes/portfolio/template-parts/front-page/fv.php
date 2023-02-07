@@ -11,11 +11,17 @@
 <section class="p-index-fv">
 	<div class="p-index-fv__wrapper">
 		<div class="p-index-fv__container">
-			<div class="p-index-fv__hero-parent">
-				<div class="p-index-fv__box1">コードを書くのが好きです。<br class="fv-padding">あなたの事業の<br>体験を改善します。</div>
-				<div class="p-index-fv__box2">WordPress<br>Developer.</div>
-				<div class="p-index-fv__box3">AKIHITO<br>MUROI</div>
-			</div>
+			<h2 class="p-index-fv__title">コードを書くのが好きです。
+				<span class="u-line-break">あなたの事業の</span>
+				<span class="u-line-break">体験を改善します。</span>
+			</h2>
+			<p class="p-index-fv__job">
+				WordPress
+				<span class="u-line-break">Developer.</span>
+			</p>
+			<p class="p-index-fv__author">
+				AKIHITO<br>MUROI
+			</p>
 		</div>
 	</div>
 	</div>
