@@ -70,6 +70,9 @@ function portfolio_setup() {
 		)
 	);
 
+	define( 'MY_DIR_URL', get_stylesheet_directory_uri() );
+	define( 'MY_DIR_PATH', get_stylesheet_directory() );
+
 	// Set up the WordPress core custom background feature.
 	add_theme_support(
 		'custom-background',
@@ -149,26 +152,6 @@ function portfolio_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'portfolio_scripts' );
-
-/**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
-
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Functions which enhance the theme by hooking into WordPress.
- */
-require get_template_directory() . '/inc/template-functions.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
 
 /**
  * Load Jetpack compatibility file.

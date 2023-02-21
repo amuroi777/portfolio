@@ -17,38 +17,38 @@
 				<p class="p-index-works__title-sub">これまで制作したもの</p>
 			</div>
 			<div class="p-index-works__card">
-				<?php
-				$args      = array(
-					'post_type'      => 'news',
-					'posts_per_page' => 3,
-					'order'          => 'DESC',
-				);
-				$the_query = new WP_Query( $args );
-				?>
+				<div class="splide">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<?php
+									$work_query = new WP_Query(
+										array(
+											'post_type' => 'works',
+											'posts_per_page' => -1,
+											'order'     => 'DESC',
+										)
+									);
+									?>
+							<?php if ( $work_query->have_posts() ) : ?>
+								<?php while ( $work_query->have_posts() ) : ?>
+									<?php $work_query->the_post(); ?>
 
-				<?php
-				if ( $the_query->have_posts() ) :
-					;
-					?>
-				<?php
-					while ( $the_query->have_posts() ) :
-						$the_query->the_post();
-						?>
+							<li class="splide__slide">
+								<div class="p-index-works__card-items">
+									<a href="<?php esc_url( the_permalink() ); ?>" class="p-index-works__card-item">
+										<div class="card_img"><?php the_post_thumbnail( 'full' ); ?></div>
+										<div class="card_title"><?php the_title(); ?></div>
+										<div class="card_text"><?php the_content(); ?></div>
+									</a>
+								</div>
+							</li>
 
-				<div class="p-index-works__card-items">
-					<a href="<?php esc_url( the_permalink() ); ?> class=" p-index-works__card-item">
-						<div class="card_img"><img src="../../img/about-bg.jpg" alt=""></div>
-						<div class="card_title">タイトルタイトル</div>
-						<div class="card_text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
-					</a>
-					<?php endwhile; ?>
-					<?php else : ?>
-					<p>記事がありません</p>
-					<?php
-						endif;
-						wp_reset_postdata();
-					?>
+							<?php endwhile; ?>
+							<?php endif; ?>
+							<?php wp_reset_postdata(); ?>
+
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
 </section>

@@ -8,7 +8,7 @@ works
 	&__wrapper {
         max-width: 1200px;
 		width: 100%;
-		margin: 0 auto;
+		margin-left:  auto;
 	}
 
 	&__container {
@@ -35,18 +35,39 @@ works
 	}
 
 	&__card {
-
 	}
 
 	&__card-items {
-		margin-top: 80px;
-		display: flex;
+		margin-left: 24px;
 	}
 
 	&__card-item {
 		width: calc(33.3% - 24px * 2 / 4);
 		background: #fff;
-		padding: 16px;
 		border-radius: 4px;
 	}
+}
+
+.splide {
+  padding-left: 100px;
+  margin-left: auto;
+  overflow: hidden;
+}
+.splide__track {
+  margin-bottom: 30px;
+  padding-top: 54px;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.splide__pagination__page {
+	display: none;
+}
+
+.splide__pagination li {
+	display: none;
 }
