@@ -626,6 +626,27 @@ footer
   grid-template-areas: "header" "main" "footer";
 }
 
+.splide {
+  padding-left: 100px;
+  margin-left: auto;
+  overflow: hidden;
+}
+.splide__track {
+  margin-bottom: 30px;
+  padding-top: 54px;
+}
+.splide__slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.splide__pagination__page {
+  display: none;
+}
+.splide__pagination li {
+  display: none;
+}
+
 /* ==========================
 fv
 =========================== */
@@ -866,31 +887,6 @@ works
   width: calc(33.3% - 12px);
   background: #fff;
   border-radius: 4px;
-}
-
-.splide {
-  padding-left: 100px;
-  margin-left: auto;
-  overflow: hidden;
-}
-
-.splide__track {
-  margin-bottom: 30px;
-  padding-top: 54px;
-}
-
-.splide__slide img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.splide__pagination__page {
-  display: none;
-}
-
-.splide__pagination li {
-  display: none;
 }
 
 /* Text meant only for screen readers. */
