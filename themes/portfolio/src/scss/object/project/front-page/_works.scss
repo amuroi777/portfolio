@@ -6,18 +6,14 @@ works
 .p-index-works {
 
 	&__wrapper {
-        max-width: 1200px;
+		max-width: 1200px;
 		width: 100%;
-		margin-left:  auto;
+		margin-left: auto;
 	}
 
-	&__container {
+	&__container {}
 
-	}
-
-	&__title {
-		
-	}
+	&__title {}
 
 	&__title-n {
 		font-size: 2rem;
@@ -34,8 +30,7 @@ works
 		font-weight: 700;
 	}
 
-	&__card {
-	}
+	&__card {}
 
 	&__card-items {
 		margin-left: 24px;
