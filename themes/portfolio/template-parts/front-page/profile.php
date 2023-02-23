@@ -11,10 +11,11 @@
 <section class="p-index-profile">
 	<div class="p-index-profile__wrapper">
 		<div class="p-index-profile__container">
-			<div class="p-index-profile__title">
-				<p class="p-index-profile__title-n">01</p>
-				<p class="p-index-profile__title-main">Profile</p>
-				<p class="p-index-profile__title-sub">私について</p>
+			<div class="p-front-section__title-inner">
+				<h2 class="c-section-title">
+					<span class="c-section-title__english">Profile</span>
+					私について
+				</h2>
 			</div>
 		</div>
 		<div class="p-index-profile__p-area">

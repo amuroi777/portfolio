@@ -13,11 +13,13 @@ get_header();
 ?>
 
 <?php
-esc_html( get_template_part( 'template-parts/front-page/fv' ) );
-esc_html( get_template_part( 'template-parts/front-page/profile' ) );
-esc_html( get_template_part( 'template-parts/front-page/skils' ) );
-esc_html( get_template_part( 'template-parts/front-page/works' ) );
-esc_html( get_template_part( 'template-parts/front-page/blog' ) );
+get_template_part( 'template-parts/front-page/fv' );
+echo '<div class="p-index-counter">';
+get_template_part( 'template-parts/front-page/profile' );
+get_template_part( 'template-parts/front-page/skils' );
+get_template_part( 'template-parts/front-page/works' );
+get_template_part( 'template-parts/front-page/blog' );
+echo '</div>';
 ?>
 
 
