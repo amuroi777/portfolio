@@ -9,21 +9,31 @@
 	box-sizing: border-box;
 }
 
-html {
-	font-size: 62.5%;
-}
+html {}
 
 body {
-font-family: var.$font-base;
-
+	font-family: var.$font-base;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.45;
 	list-style: none;
-	background: url(../../img/dot.png);
-    background-color:rgba(255,255,255,0.8);
-	background-blend-mode:lighten;
+	background-color: #F5F5F5;
 	background-size: 100px 100px;
+	position: relative;
+
+	&::before {
+		content: '';
+		background: url(../../img/dot.png);
+		background-repeat: repeat;
+		background-size: 83px 83px;
+		background-color: rgba(255, 255, 255, 0.9);
+		background-blend-mode: lighten;
+		width: 100%;
+		height: 100%;
+		display: inline-block;
+		position: absolute;
+		z-index: -1;
+	}
 }
 
 a {
@@ -115,4 +125,3 @@ a {
 li {
 	list-style: none;
 }
-
