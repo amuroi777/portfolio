@@ -7,8 +7,8 @@ header
 	padding-top: 22px;
 
 	&__wrapper {
-		padding-right: 16px;
-		padding-left: 16px;
+		padding-right: 24px;
+		padding-left: 24px;
 	}
 
 	&__container {
@@ -18,7 +18,7 @@ header
 	}
 
 	&__title {
-		font-size: 3.2rem;
+		font-size: 32px;
 		font-weight: 700;
 	}
 }
@@ -42,13 +42,14 @@ header
 		@include var.mq(xl) {
 			position: relative;
 			display: block;
-			font-size: 2.2rem;
+			font-size: 22px;
 			line-height: 1.7142;
 		}
 	}
 
 	&__item {
 		font-weight: 700;
+
 		&:not(:last-child, :nth-last-child(3), :nth-last-child(2)) {
 			margin-right: 2.2rem;
 		}

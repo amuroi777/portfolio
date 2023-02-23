@@ -1,5 +1,5 @@
 {
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "[php]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "valeryanm.vscode-phpsab"
