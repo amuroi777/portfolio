@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto+Slab:wght@500;700&display=swap');
+// /global/_variables.scss
 
-$font-family-en: 'Noto Sans JP', sans-serif;
-$font-family-ja: 'Roboto Slab', serif;
+// 参考https: //techblog.recochoku.jp/1206
+$font-base: 'Yu Gothic Medium','游ゴシック Medium', Roboto slab,"游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ",
+  '游ゴシック' , sans-serif;
+
+// $font-family-en: 'Roboto Slab', serif;
 
 
 $breakpoints: (
