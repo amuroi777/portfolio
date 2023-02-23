@@ -4,20 +4,16 @@
  profile
 =========================== */
 .p-index-profile {
-	
+
 	&__wrapper {
-        max-width: 1200px;
+		max-width: 1200px;
 		width: 100%;
 		margin: 0 auto;
 	}
 
-	&__container {
+	&__container {}
 
-	}
-
-	&__title {
-		
-	}
+	&__title {}
 
 	&__title-n {
 		font-size: 2rem;
@@ -44,7 +40,7 @@
 		width: 250px;
 		height: 250px;
 		border-radius: 50%;
-		
+
 	}
 
 
