@@ -388,7 +388,7 @@ header
   justify-content: space-between;
 }
 .l-header__title {
-  font-size: 3.2rem;
+  font-size: 32px;
   font-weight: 700;
 }
 
@@ -412,7 +412,7 @@ header
   .l-header-nav__link {
     position: relative;
     display: block;
-    font-size: 2.2rem;
+    font-size: 22px;
     line-height: 1.7142;
   }
 }
@@ -420,7 +420,7 @@ header
   font-weight: 700;
 }
 .l-header-nav__item:not(:last-child, :nth-last-child(3), :nth-last-child(2)) {
-  margin-right: 2.2rem;
+  margin-right: 22px;
 }
 .l-header-nav__item:nth-last-child(2) {
   margin-right: 24px;
@@ -518,7 +518,7 @@ footer
 }
 @media (min-width: 1200px) {
   .l-footer__title {
-    font-size: 5.2rem;
+    font-size: 52px;
     font-weight: 700;
   }
 }
@@ -526,7 +526,7 @@ footer
   .l-footer__contact {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 2.6rem;
+    font-size: 26px;
     position: relative;
   }
   .l-footer__contact::after {
@@ -549,7 +549,7 @@ footer
 }
 @media (min-width: 1200px) {
   .l-footer__privacy {
-    font-size: 1.4rem;
+    font-size: 14px;
   }
 }
 @media (min-width: 1200px) {
@@ -579,7 +579,7 @@ footer
   .l-footer-nav__link {
     position: relative;
     display: block;
-    font-size: 3.2rem;
+    font-size: 32px;
     line-height: 1.7142;
   }
 }
@@ -654,13 +654,14 @@ fv
   display: grid;
   justify-items: center;
   grid-template-areas: "title";
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  padding: 0 24px;
 }
 @media (min-width: 1200px) {
   .p-index-fv__title {
     writing-mode: vertical-lr;
-    font-size: 2.6rem;
+    font-size: 26px;
     font-weight: 700;
     grid-row: 1/end;
     grid-column: 2;
@@ -670,13 +671,13 @@ fv
   }
 }
 .p-index-fv__job {
-  font-size: 9.5rem;
+  font-size: 95px;
   font-weight: 700;
   grid-column: 1;
   grid-row: 4/5;
 }
 .p-index-fv__author {
-  font-size: 7rem;
+  font-size: 70px;
   font-weight: 600;
   grid-column: 3;
   grid-row: end;
@@ -705,43 +706,6 @@ fv
   letter-spacing: 0.05em;
 }
 
-/* アニメーションなしエリア */
-.empty__container {
-  height: 900px;
-}
-
-/* GSAP ScrollTriggerエリア */
-.side-scroll__section {
-  background-color: #285430;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* はみ出た部分を隠しておく */
-}
-
-.side-scroll__itemOuter {
-  position: relative;
-  height: 700px;
-  width: 100%;
-}
-
-.side-scroll__itemInner {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  display: flex;
-  gap: 0 60px;
-}
-
-.side-scroll__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 80px;
-  height: 400px;
-  width: 600px;
-}
-
 /* ==========================
  profile
 =========================== */
@@ -751,15 +715,15 @@ fv
   margin: 0 auto;
 }
 .p-index-profile__title-n {
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 700;
 }
 .p-index-profile__title-main {
-  font-size: 5.2rem;
+  font-size: 52px;
   font-weight: 700;
 }
 .p-index-profile__title-sub {
-  font-size: 2.6rem;
+  font-size: 26px;
   font-weight: 700;
 }
 .p-index-profile__p-area {
@@ -780,7 +744,7 @@ fv
   padding: 2em 4.5em;
   color: #333;
   transition: 0.3s;
-  font-size: 2.4rem;
+  font-size: 24px;
   font-weight: 700;
   position: relative;
 }
@@ -816,15 +780,15 @@ fv
   margin: 0 auto;
 }
 .p-index-skils__title-n {
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 700;
 }
 .p-index-skils__title-main {
-  font-size: 5.2rem;
+  font-size: 52px;
   font-weight: 700;
 }
 .p-index-skils__title-sub {
-  font-size: 2.6rem;
+  font-size: 26px;
   font-weight: 700;
 }
 .p-index-skils__p-area {
@@ -836,7 +800,7 @@ fv
   margin-bottom: 60px;
 }
 .p-index-skils__text-main {
-  font-size: 2.4rem;
+  font-size: 24px;
   font-weight: 700;
   margin: 12px;
 }
@@ -848,12 +812,12 @@ fv
   margin-top: 32px;
 }
 .p-index-skils__text-sub-title {
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 .p-index-skils__text-sub-content {
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -866,15 +830,15 @@ works
   margin-left: auto;
 }
 .p-index-works__title-n {
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 700;
 }
 .p-index-works__title-main {
-  font-size: 5.2rem;
+  font-size: 52px;
   font-weight: 700;
 }
 .p-index-works__title-sub {
-  font-size: 2.6rem;
+  font-size: 26px;
   font-weight: 700;
 }
 .p-index-works__card-items {
@@ -895,15 +859,15 @@ blog
   margin-left: auto;
 }
 .p-index-blog__title-n {
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 700;
 }
 .p-index-blog__title-main {
-  font-size: 5.2rem;
+  font-size: 52px;
   font-weight: 700;
 }
 .p-index-blog__title-sub {
-  font-size: 2.6rem;
+  font-size: 26px;
   font-weight: 700;
 }
 .p-index-blog__card-items {

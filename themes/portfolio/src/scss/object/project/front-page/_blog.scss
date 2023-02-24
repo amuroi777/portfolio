@@ -1,0 +1,49 @@
+@use '../../../global/' as var;
+
+/* ==========================
+blog
+=========================== */
+.p-index-blog {
+
+	&__wrapper {
+        max-width: 1200px;
+		width: 100%;
+		margin-left:  auto;
+	}
+
+	&__container {
+
+	}
+
+	&__title {
+		
+	}
+
+	&__title-n {
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	&__title-main {
+		font-size: 52px;
+		font-weight: 700;
+	}
+
+	&__title-sub {
+		font-size: 26px;
+		font-weight: 700;
+	}
+
+	&__card {
+	}
+
+	&__card-items {
+		margin-left: 24px;
+	}
+
+	&__card-item {
+		width: calc(33.3% - 24px * 2 / 4);
+		background: #fff;
+		border-radius: 4px;
+	}
+}

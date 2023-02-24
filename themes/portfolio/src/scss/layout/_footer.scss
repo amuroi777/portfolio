@@ -22,7 +22,7 @@ footer
 
 	&__title {
 		@include var.mq(xl) {
-			font-size: 5.2rem;
+			font-size: 52px;
 			font-weight: 700;	
 		}
 	}
@@ -31,7 +31,7 @@ footer
 	  @include var.mq(xl) {
 		  margin-top: 20px;
 		  font-weight: 700;
-		  font-size: 2.6rem;
+		  font-size: 26px;
 		  position: relative;
    
 		  &::after {
@@ -59,7 +59,7 @@ footer
    &__privacy {
 
 	@include var.mq(xl) {
-		font-size: 1.4rem;
+		font-size: 14px;
 	}
    }
 
@@ -91,7 +91,7 @@ footer
 		@include var.mq(xl) {
 			position: relative;
 			display: block;
-			font-size: 3.2rem;
+			font-size: 32px;
 			line-height: 1.7142;
 		}
 	}
