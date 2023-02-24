@@ -164,11 +164,8 @@ img {
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", Roboto slab, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", "游ゴシック", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.45;
@@ -884,6 +881,35 @@ works
   margin-left: 24px;
 }
 .p-index-works__card-item {
+  width: calc(33.3% - 12px);
+  background: #fff;
+  border-radius: 4px;
+}
+
+/* ==========================
+blog
+=========================== */
+.p-index-blog__wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+}
+.p-index-blog__title-n {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.p-index-blog__title-main {
+  font-size: 5.2rem;
+  font-weight: 700;
+}
+.p-index-blog__title-sub {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.p-index-blog__card-items {
+  margin-left: 24px;
+}
+.p-index-blog__card-item {
   width: calc(33.3% - 12px);
   background: #fff;
   border-radius: 4px;
