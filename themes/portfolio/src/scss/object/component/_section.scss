@@ -1,0 +1,19 @@
+
+/* ==========================
+c-section
+=========================== */
+.c-section-title {
+	font-size: 26px;
+	font-weight: 700;
+
+	&::before {
+		counter-increment: number 1;
+		content: counter(number, decimal-leading-zero) "";
+		font-size: 20px;
+	}
+
+	&__english {
+		display: block;
+		font-size: 52px;
+	}
+}
