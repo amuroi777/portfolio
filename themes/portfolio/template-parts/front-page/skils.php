@@ -11,10 +11,11 @@
 <section class="p-index-skils">
 	<div class="p-index-skils__wrapper">
 		<div class="p-index-skils__container">
-			<div class="p-index-skils__title">
-				<p class="p-index-skils__title-n">02</p>
-				<p class="p-index-skils__title-main">skils</p>
-				<p class="p-index-skils__title-sub">私ができること</p>
+			<div class="p-front-section__title-inner">
+				<h2 class="c-section-title">
+					<span class="c-section-title__english">Skils</span>
+					私ができること
+				</h2>
 			</div>
 			<div class="p-index-skils__p-area">
 				<div class="p-index-skils__text-area">
