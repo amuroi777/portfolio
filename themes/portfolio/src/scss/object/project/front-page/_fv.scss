@@ -22,7 +22,7 @@ fv
 			font-size: 26px;
 			font-weight: 700;
 			grid-row: 1 / end;
-			grid-column: 2;
+			grid-column: 3;
 			line-height: 1.8;
 			letter-spacing: 10px;
 			font-feature-settings: 'case' on, 'vert' on, 'kern' off;
@@ -40,8 +40,11 @@ fv
 	&__author {
 		font-size: 70px;
 		font-weight: 600;
-		grid-column: 3;
+		grid-column: 5/7;
 		grid-row: end;
+		line-height: 1;
+		text-align: right;
+		margin-top: 47px;
 	}
 }
 
