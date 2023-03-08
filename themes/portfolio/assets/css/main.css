@@ -882,13 +882,21 @@ fv
   font-weight: 700;
 }
 
+/* ==========================
+ works
+=========================== */
 .p-index-works {
   overflow: hidden;
 }
 .p-index-works__wrapper {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+  margin-left: 36px;
+}
+@media (min-width: 1400px) {
+  .p-index-works__wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .p-index-works__xscroll {
   overflow-x: scroll;

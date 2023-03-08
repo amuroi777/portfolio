@@ -1,49 +1,52 @@
 @use '../../../global/' as var;
 
 /* ==========================
-works
+ works
 =========================== */
+
 .p-index-works {
+	overflow: hidden;
 
 	&__wrapper {
-        max-width: 1200px;
-		width: 100%;
-		margin-left:  auto;
+		margin-left: 36px;
+
+		@include var.mq(xxl) {
+			max-width: 1200px;
+			width: 100%;
+			margin: 0 auto;	
+		}
+	}
+
+	&__xscroll {
+		overflow-x: scroll;
+		margin: 0 calc(50% - 50vw);
+		/*スクロールバー非表示（IE・Edge）*/
+		-ms-overflow-style: none;
+		/*スクロールバー非表示（Firefox）*/
+		scrollbar-width: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 
 	&__container {
-
+		margin-top: 54px;
+		display: flex;
+		width: 150vw;
+		gap: 24px;
+		margin-left: calc(69% - 50vw);
 	}
 
-	&__title {
-		
+	&__column {
+		// width: calc(33.3% - 24px * 2 / 4);
+		width: 330px;
 	}
 
-	&__title-n {
-		font-size: 20px;
-		font-weight: 700;
-	}
 
-	&__title-main {
-		font-size: 52px;
-		font-weight: 700;
-	}
-
-	&__title-sub {
-		font-size: 26px;
-		font-weight: 700;
-	}
-
-	&__card {
-	}
+	&__card {}
 
 	&__card-items {
-		margin-left: 24px;
-	}
-
-	&__card-item {
-		width: calc(33.3% - 24px * 2 / 4);
-		background: #fff;
-		border-radius: 4px;
+		// margin-left: 24px;
 	}
 }
