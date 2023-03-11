@@ -10,46 +10,52 @@
 
 <section class="p-index-blog">
 	<div class="p-index-blog__wrapper">
-		<div class="p-index-blog__container">
-			<div class="p-front-section__title">
-				<h2 class="c-section-title">
-					<span class="c-section-title__english">Blog</span>
-					◯◯を発信しています。
-				</h2>
-			</div>
-			<div class="p-index-blog__card">
-				<div class="splide">
-					<div class="splide__track">
-						<ul class="splide__list">
-							<?php
-									$blog_query = new WP_Query(
-										array(
-											'post_type' => 'blog',
-											'posts_per_page' => -1,
-											'order'     => 'DESC',
-										)
-									);
+		<div class="p-front-section__title-inner">
+			<h2 class="c-section-title">
+				<span class="c-section-title__english">blog</span>
+				◯◯について発信しています
+			</h2>
+		</div>
+
+		<div class="p-index-blog__xscroll">
+			<div class="p-index-blog__container">
+				<?php
+					$blog_query = new WP_Query(
+						array(
+							'post_type'      => 'blog',
+							'posts_per_page' => -1,
+							'order'          => 'DESC',
+						)
+					);
+					if ( $blog_query->have_posts() ) :
+						while ( $blog_query->have_posts() ) :
+							$blog_query->the_post();
+							?>
+				<div class="p-index-blog__column">
+					<article class="c-article-card p-index-blog__card-items">
+						<a href="<?php esc_url( the_permalink() ); ?>"
+							class="c-article-card__link p-index-blog__card-item">
+							<picture class="c-article-card__image-inner">
+								<?php
+								if ( has_post_thumbnail() ) :
+									the_post_thumbnail( 'full' );
 									?>
-							<?php if ( $blog_query->have_posts() ) : ?>
-							<?php while ( $blog_query->have_posts() ) : ?>
-							<?php $blog_query->the_post(); ?>
-
-							<li class="splide__slide">
-								<div class="p-index-blog__card-items">
-									<a href="<?php esc_url( the_permalink() ); ?>" class="p-index-blog__card-item">
-										<div class="card_img"><?php the_post_thumbnail( 'full' ); ?></div>
-										<div class="card_title"><?php the_title(); ?></div>
-										<div class="card_text"><?php the_content(); ?></div>
-									</a>
-								</div>
-							</li>
-
-							<?php endwhile; ?>
-							<?php endif; ?>
-							<?php wp_reset_postdata(); ?>
-
-						</ul>
-					</div>
+								<?php else : ?>
+								<img src="" alt="" class="c-article-card__noimage">
+								<?php endif; ?>
+							</picture>
+							<div class="c-article-card__content-inner">
+								<span
+									class="c-article-card__category"><?php echo esc_html( get_the_terms( get_the_ID(), 'genre2' )[0]->name ); ?></span>
+								<h3 class="c-article-card__title"><?php the_title(); ?></h3>
+							</div>
+						</a>
+					</article>
 				</div>
+				<?php endwhile; ?>
+				<?php endif; ?>
+				<?php wp_reset_postdata(); ?>
 			</div>
+		</div>
+	</div>
 </section>
