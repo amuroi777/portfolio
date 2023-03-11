@@ -9,6 +9,7 @@
         max-width: 1200px;
 		width: 100%;
 		margin: 0 auto;
+		margin-left: 36px;
 	}
 
 	&__container {
@@ -35,9 +36,14 @@
 	}
 
 	&__p-area {
+		padding: 0 70px 0 0;
 		width: 684px;
 		max-width: 100%;
 		margin: 62px auto;
+
+		@include var.mq(lg) {
+			padding: 0;
+		}
 	}
 
 	&__text {
