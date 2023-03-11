@@ -7,6 +7,8 @@ $font-base: 'Yu Gothic Medium','游ゴシック Medium', Roboto slab,"游ゴシ�
 
 
 $breakpoints: (
+	'min': (min-width: 320px,
+	),
 	'sm': (min-width: 576px,
 	),
 	'md': (min-width: 768px,
