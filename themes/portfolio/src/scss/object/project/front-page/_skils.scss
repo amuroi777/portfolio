@@ -6,10 +6,13 @@
 .p-index-skils {
 	
 	&__wrapper {
-        max-width: 1200px;
-		width: 100%;
-		margin: 0 auto;
 		margin-left: 36px;
+
+		@include var.mq(xxl) {
+			max-width: 1200px;
+			width: 100%;
+			margin: 0 auto;	
+		}
 	}
 
 	&__container {

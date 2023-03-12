@@ -878,10 +878,14 @@ fv
  skils
 =========================== */
 .p-index-skils__wrapper {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
   margin-left: 36px;
+}
+@media (min-width: 1400px) {
+  .p-index-skils__wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .p-index-skils__title-n {
   font-size: 20px;
