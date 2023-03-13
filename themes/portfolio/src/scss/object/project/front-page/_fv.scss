@@ -7,38 +7,54 @@ fv
 	margin-top: 32px;
 
 	&__container {
-	    display: grid;
-		justify-items: center;
-		grid-template-areas: "title";
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-		padding: 0 24px;
+		
+		@include var.mq(xl) {
+			display: grid;
+			// justify-items: center;
+			grid-template-areas: "title";
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			padding: 0 24px;
+			
+		}
 	}
 
 	&__title {
+		writing-mode: vertical-rl;
+		white-space: nowrap;
+		margin: auto;
+		width: 30%;
+		line-height: 1.8;
+		letter-spacing: 10px;
+		font-weight: 700;
+		font-size: calc(20px + 6 * (100vw - 500px) / 600);
+
 
 		@include var.mq(xl) {
-			writing-mode: vertical-lr;
 			font-size: 26px;
 			font-weight: 700;
 			grid-row: 1 / end;
 			grid-column: 3;
-			line-height: 1.8;
-			letter-spacing: 10px;
 			font-feature-settings: 'case' on, 'vert' on, 'kern' off;
 		}
 	}
 
 
+	
 	&__job {
-		font-size: 95px;
+		font-size: 66px;
 		font-weight: 700;
 		grid-column: 1;
 		grid-row: 4/5;
+
+		@include var.mq(xl) {
+		  font-size: 95px;
+		}
 	}
 
 	&__author {
-		font-size: 70px;
+		font-size: calc(50px + 20 * (100vw - 500px) / 600);
+		// font-size: 70px;
 		font-weight: 600;
 		grid-column: 5/7;
 		grid-row: end;
