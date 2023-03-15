@@ -821,10 +821,18 @@ fv
 /* ==========================
  profile
 =========================== */
+.p-index-profile {
+  margin-top: 77px;
+}
 .p-index-profile__wrapper {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+  margin-left: 36px;
+}
+@media (min-width: 1400px) {
+  .p-index-profile__wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .p-index-profile__title-n {
   font-size: 20px;
@@ -842,11 +850,16 @@ fv
   width: 684px;
   max-width: 100%;
   margin: 0 auto;
+  padding: 24px;
 }
 .p-index-profile__img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  background-color: #D9D9D9;
+  background-position: 50% 20%;
+  background-size: auto 253px;
+  margin: 25px auto;
 }
 .p-index-profile__button {
   display: flex;

@@ -4,11 +4,16 @@
  profile
 =========================== */
 .p-index-profile {
+	margin-top: 77px;
 	
 	&__wrapper {
-        max-width: 1200px;
-		width: 100%;
-		margin: 0 auto;
+		margin-left: 36px;
+
+		@include var.mq(xxl) {
+			max-width: 1200px;
+			width: 100%;
+			margin: 0 auto;	
+		}
 	}
 
 	&__container {
@@ -38,12 +43,21 @@
 		width: 684px;
 		max-width: 100%;
 		margin: 0 auto;
+		padding: 24px;
+
+		@include var.mq(xl) {
+			
+		}
 	}
 
 	&__img {
 		width: 250px;
 		height: 250px;
 		border-radius: 50%;
+		background-color: var.$c-bg-footer;
+		background-position: 50% 20%;
+		background-size: auto 253px;
+		margin: 25px auto;
 		
 	}
 
