@@ -966,6 +966,7 @@ fv
 =========================== */
 .p-index-works {
   overflow: hidden;
+  margin-top: 95px;
 }
 .p-index-works__wrapper {
   margin-left: 36px;
@@ -1003,6 +1004,7 @@ blog
 =========================== */
 .p-index-blog {
   overflow: hidden;
+  margin-top: 95px;
 }
 .p-index-blog__wrapper {
   margin-left: 36px;
