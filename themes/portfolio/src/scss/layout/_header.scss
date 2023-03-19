@@ -72,11 +72,16 @@ header
 
 .l-header-hamburger {
 	position: fixed;
-	left: 80%;
+	left: 85%;
 	z-index: 3;
 	display: inline-block;
 	width: 48px;
-	height: 48px;
+	height: 48px;	
+
+
+	@include var.mq(sm) {
+		left: 90%;
+	}
 
 	@include var.mq(xl) {
 		display: none;
@@ -90,7 +95,7 @@ header
 		left: 10px;
 		width: 27px;
 		height: 2.75px;
-		// background: var.$c-main;
+		background: black;
 		transition: 0.3s;
 	}
 
