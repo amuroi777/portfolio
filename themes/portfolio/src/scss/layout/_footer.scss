@@ -6,11 +6,6 @@ footer
 .l-footer {
 	padding: 22px 0;
 	background: var.$c-bg-footer;
-	margin-top: 90px;
-
-	@include var.mq(xl) {
-		margin-top: 148px;
-	}
 
 	&__wrapper {
 		padding-right: 16px;
