@@ -826,6 +826,26 @@ fv
   letter-spacing: 10px;
   font-weight: 700;
   font-size: calc(20px + 6 * (100vw - 500px) / 600);
+  position: relative;
+}
+.p-index-fv__title::before {
+  content: "";
+  position: absolute;
+  background: url(../../img/circle.png) no-repeat;
+  width: 211px;
+  height: 35px;
+  top: 150%;
+}
+@media (min-width: 768px) {
+  .p-index-fv__title::before {
+    left: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .p-index-fv__title::before {
+    top: 115%;
+    left: -186%;
+  }
 }
 @media (min-width: 1200px) {
   .p-index-fv__title {

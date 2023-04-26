@@ -27,10 +27,10 @@
 							<a href="<?php echo esc_url( home_url() ); ?>" class="l-footer-nav__link">Home</a>
 						</li>
 						<li class="l-footer-nav__item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="l-footer-nav__link">Profile</a>
+							<a href="#profile" class="l-footer-nav__link">Profile</a>
 						</li>
 						<li class="l-footer-nav__item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="l-footer-nav__link">Skils</a>
+							<a href="#skils" class="l-footer-nav__link">Skils</a>
 						</li>
 						<li class="l-footer-nav__item">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="l-footer-nav__link">Contact</a>
@@ -47,6 +47,7 @@
 </footer>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 <script src="script.js" defer></script>
 
 <?php wp_footer(); ?>

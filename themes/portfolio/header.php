@@ -43,10 +43,10 @@
 							<a href="<?php echo esc_url( home_url() ); ?>" class="l-header-nav__link">Home</a>
 						</li>
 						<li class="l-header-nav__item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="l-header-nav__link">Profile</a>
+							<a href="#profile" class="l-header-nav__link">Profile</a>
 						</li>
 						<li class="l-header-nav__item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="l-header-nav__link">Skils</a>
+							<a href="#skils" class="l-header-nav__link">Skils</a>
 						</li>
 						<li class="l-header-nav__item">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="l-header-nav__link">Contact</a>

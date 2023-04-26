@@ -8,7 +8,7 @@
 
 ?>
 
-<section class="p-index-profile">
+<section class="p-index-profile" id="profile">
 	<div class="p-index-profile__wrapper">
 		<div class="p-index-profile__container">
 			<div class="p-front-section__title-inner">

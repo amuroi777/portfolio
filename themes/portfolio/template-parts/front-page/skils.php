@@ -8,7 +8,7 @@
 
 ?>
 
-<section class="p-index-skils">
+<section class="p-index-skils" id="#skils">
 	<div class="p-index-skils__wrapper">
 		<div class="p-index-skils__container">
 			<div class="p-front-section__title-inner">
