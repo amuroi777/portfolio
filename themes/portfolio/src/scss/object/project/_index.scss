@@ -3,8 +3,13 @@
 
 // front-page
 @forward 'front-page';
+
+// works
 @forward 'archive-works';
 @forward 'single-works';
 
-// @forward 'works';
+// blog
+@forward 'archive-blog';
+@forward 'single-blog';
+
 
