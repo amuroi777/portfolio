@@ -1,0 +1,146 @@
+@use '../../../global/' as var;
+
+/* ==========================
+contents
+=========================== */
+.p-blog-contents {
+  padding-top: 60px 0 0;
+
+  @include var.mq(sp) {
+    padding: 60px 0 0;
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  &__container {
+    display: block;
+
+    @include var.mq(sp) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__main {
+    width: 100%;
+    padding: 0 25px;
+
+    @include var.mq(md) {
+      width: 100%;
+      max-width: 642px;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+
+  &__breadcrumb {
+    color: var.$c-text-color;
+    display: flex;
+    align-items: center;
+  }
+
+  &__breadcrumb-padding {
+    padding: 0 8px;
+  }
+
+  &__breadcrumb-title {
+    font-size: 14px;
+  }
+
+  &__archive-blog-item {
+    display: flex;
+    align-items: stretch;
+
+    justify-content: space-between;
+    margin-top: 36px;
+  }
+
+  &__archive-blog-thumbnail {
+    width: 50%;
+
+    @include var.mq(sm) {
+      width: 60%;
+      height: 100%;
+    }
+  }
+
+  &__archive-blog-thumbnail-image {
+    height: auto;
+
+    @include var.mq(sm) {
+      width: 330px;
+      height: 200px;
+    }
+  }
+
+  &__archive-blog-body {
+    width: 45%;
+
+    @include var.mq(sm) {
+      width: 330px;
+      margin-left: 12px;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+
+    @include var.mq(sp) {
+      display: block;
+    }
+  }
+
+  &__meta-cats {
+    display: flex;
+    align-items: center;
+  }
+
+
+
+  &__time-icon {
+    width: 16.58px;
+    height: 16px ;
+  }
+
+  &__meta-time {
+    font-size: 14px;
+    line-height: 2.1;
+    color: #414141;
+    margin-left: 3.65px;
+  }
+
+  &__archive-blog-title {
+    font-size: 18px;
+    font-weight: 700;
+
+    @include var.mq(sp) {
+      font-size: 1.6rem;
+      font-weight: bold;
+      line-height: 1.43;
+    }
+  }
+}
+
+.pagination{
+   margin:58px auto;
+}
+.nav-links{
+   display:flex;
+}
+.pagination .page-numbers{
+   display:inline-block;
+   margin-right:26px;
+   padding:20px 0px;
+   color: var.$c-text-color;
+   font-size: 20px;
+}
+
+.pagination .dots{
+   background:transparent;
+   box-shadow:none;
+}

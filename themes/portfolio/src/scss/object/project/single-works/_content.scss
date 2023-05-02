@@ -23,7 +23,7 @@ contents
     }
   }
 
-  &__archive-works {
+  &__archive-blog {
     width: 100%;
     padding: 0 25px;
 
@@ -54,14 +54,31 @@ contents
     padding-top: 45px;
     width: 100%;
     max-width: 100%;
-    height: 458px;
+    height: 243px;
     background: url('../../img/single-img.png') no-repeat center / cover;
+
+	@include var.mq(sm) {
+		height: 355px;
+	}
+
+	@include var.mq(md) {
+		height: 458px;
+	}
   }
 
   &__detail {
     width: 760px;
     margin: auto;
+    max-width: 100%;
+	padding: 0 27px;
 
+	@include var.mq(md) {
+		padding: 0 42px;
+	}
+
+	@include var.mq(lg) {
+		padding: 0;
+	}
   }
 
   &__detail-title {
