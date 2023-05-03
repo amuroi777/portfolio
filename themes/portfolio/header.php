@@ -49,7 +49,8 @@
 							<a href="#skils" class="l-header-nav__link">Skils</a>
 						</li>
 						<li class="l-header-nav__item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="l-header-nav__link">Contact</a>
+							<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>"
+								class="l-header-nav__link">Contact</a>
 						</li>
 					</ul>
 				</nav>
