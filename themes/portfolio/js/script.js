@@ -28,3 +28,30 @@ document.addEventListener('DOMContentLoaded', function () {
   parent.style.width = '${xscrollValue + elementGap}px';
 
 });
+
+
+// fvのTweenアニメーション
+gsap.fromTo('.p-index-fv__job',
+  3,
+  {
+    x: 0,
+    opacity: 0,
+  },
+  {
+    x: 50,
+    opacity: 1,
+  }
+);
+
+gsap.fromTo(
+  '.p-index-fv__author',
+  2,
+  {
+    x: 0,
+    opacity: 0,
+  },
+  {
+    x: -100,
+    opacity: 1,
+  }
+);
