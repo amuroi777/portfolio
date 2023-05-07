@@ -133,6 +133,7 @@ h1.wp-block-heading  {
 	font-weight: 700;
 	border-bottom: 2px solid var.$c-base-color;
 	padding-bottom: 14px;
+	margin: 39px 0;
 }
 
 
@@ -141,6 +142,7 @@ h2.wp-block-heading {
 	font-weight: 700;
 	background: linear-gradient(transparent 50%, var.$c-article-color 0);
 	display: inline-block;
+	margin: 39px 0;
 }
 
 h3.wp-block-heading {
@@ -148,11 +150,13 @@ h3.wp-block-heading {
 	font-weight: 700;
 	border-left: solid 3px var.$c-base-color;
 	padding-left: 10px;
+	margin: 39px 0;
 }
 
 h4.wp-block-heading {
 	font-size: 18px;
 	font-weight: 700;
 	padding: 0 3px;
-	background: var.$c-article-color
+	background: var.$c-article-color;
+	margin: 39px 0;
 }

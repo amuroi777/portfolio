@@ -106,7 +106,7 @@ contents
     font-size: 14px;
   }
 
-  &__single-content p {
-    margin: 39px 0 39px;
+  &__single-content p +p {
+    margin-top: 39px  ;
   }
 }
