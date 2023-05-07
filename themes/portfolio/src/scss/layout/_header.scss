@@ -37,7 +37,22 @@ header
 	}
 
 	&__link {
-		display: none;
+		transition: all 0.7s ease-out;
+		background: -webkit-linear-gradient(180deg, var.$c-base-color, var.$c-white, var.$c-gradient-light, var.$c-gradient-middle);
+		background: -webkit-linear-gradient(right, var.$c-base-color, var.$c-white, var.$c-gradient-light, var.$c-gradient-middle);
+		background: linear-gradient(270deg, var.$c-base-color, var.$c-base-color, var.$c-white, var.$c-white);
+		background-position: 1% 50%;
+		background-size: 300% 300%;
+		border: none;
+		
+		&:hover {
+			background-position: 99% 50%;
+			color: var.$c-white;
+			border: 2px solid var.$c-base-color;
+			cursor: pointer;
+			padding: 0 4px;
+			transform: scale(0.8);
+		}
 
 		@include var.mq(xl) {
 			position: relative;
@@ -47,7 +62,7 @@ header
 		}
 	}
 
-	&__item {
+	&__item { 
 		font-weight: 700;
 		&:not(:last-child, :nth-last-child(3), :nth-last-child(2)) {
 			margin-right: 22px;

@@ -122,7 +122,20 @@ footer
 	
 
 	&__link {
-		display: block;
+		transition: all 0.7s ease-out;
+		background: linear-gradient(270deg, var.$c-base-color, var.$c-base-color, var.$c-bg-footer, var.$c-bg-footer);
+		background-position: 1% 50%;
+		background-size: 300% 300%;
+		border: none;
+		
+		&:hover {
+			background-position: 99% 50%;
+			color: var.$c-white;
+			border: 2px solid var.$c-base-color;
+			cursor: pointer;
+			padding: 0 4px;
+			transform: scale(0.8);
+		}
 
 		@include var.mq(lg) {
 			position: relative;

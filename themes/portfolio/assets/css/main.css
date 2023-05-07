@@ -245,6 +245,7 @@ h1.wp-block-heading {
   font-weight: 700;
   border-bottom: 2px solid #000000;
   padding-bottom: 14px;
+  margin: 39px 0;
 }
 
 h2.wp-block-heading {
@@ -252,6 +253,7 @@ h2.wp-block-heading {
   font-weight: 700;
   background: linear-gradient(transparent 50%, #29FFF2 0);
   display: inline-block;
+  margin: 39px 0;
 }
 
 h3.wp-block-heading {
@@ -259,6 +261,7 @@ h3.wp-block-heading {
   font-weight: 700;
   border-left: solid 3px #000000;
   padding-left: 10px;
+  margin: 39px 0;
 }
 
 h4.wp-block-heading {
@@ -266,6 +269,7 @@ h4.wp-block-heading {
   font-weight: 700;
   padding: 0 3px;
   background: #29FFF2;
+  margin: 39px 0;
 }
 
 hr {
@@ -320,7 +324,6 @@ table {
 }
 
 a:hover, a:focus, a:active {
-  opacity: 0.4;
   transition: all 0.5s;
 }
 
@@ -335,12 +338,6 @@ input[type=submit] {
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   padding: 0.6em 1em 0.4em;
-}
-button:hover,
-input[type=button]:hover,
-input[type=reset]:hover,
-input[type=submit]:hover {
-  border-color: #ccc #bbb #aaa;
 }
 button:active, button:focus,
 input[type=button]:active,
@@ -442,7 +439,21 @@ header
   align-items: center;
 }
 .l-header-nav__link {
-  display: none;
+  transition: all 0.7s ease-out;
+  background: -webkit-linear-gradient(180deg, #000000, #FFFFFF, #868686, #3d3d3d);
+  background: -webkit-linear-gradient(right, #000000, #FFFFFF, #868686, #3d3d3d);
+  background: linear-gradient(270deg, #000000, #000000, #FFFFFF, #FFFFFF);
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  border: none;
+}
+.l-header-nav__link:hover {
+  background-position: 99% 50%;
+  color: #FFFFFF;
+  border: 2px solid #000000;
+  cursor: pointer;
+  padding: 0 4px;
+  transform: scale(0.8);
 }
 @media (min-width: 1200px) {
   .l-header-nav__link {
@@ -651,7 +662,19 @@ footer
   text-align: center;
 }
 .l-footer-nav__link {
-  display: block;
+  transition: all 0.7s ease-out;
+  background: linear-gradient(270deg, #000000, #000000, #D9D9D9, #D9D9D9);
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  border: none;
+}
+.l-footer-nav__link:hover {
+  background-position: 99% 50%;
+  color: #FFFFFF;
+  border: 2px solid #000000;
+  cursor: pointer;
+  padding: 0 4px;
+  transform: scale(0.8);
 }
 @media (min-width: 992px) {
   .l-footer-nav__link {
@@ -1378,8 +1401,8 @@ contents
   margin-left: 20.35px;
   font-size: 14px;
 }
-.p-single-works-contents__single-content p {
-  margin: 39px 0 39px;
+.p-single-works-contents__single-content p + p {
+  margin-top: 39px;
 }
 
 /* ==========================
@@ -1639,8 +1662,8 @@ contents
   margin-left: 20.35px;
   font-size: 14px;
 }
-.p-single-blog-contents__single-content p {
-  margin: 39px 0 39px;
+.p-single-blog-contents__single-content p + p {
+  margin-top: 39px;
 }
 
 /* ==========================
