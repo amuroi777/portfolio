@@ -240,22 +240,32 @@ li {
   list-style: none;
 }
 
-article h1 {
+h1.wp-block-heading {
   font-size: 21px;
   font-weight: 700;
   border-bottom: 2px solid #000000;
   padding-bottom: 14px;
 }
 
-article h4 {
+h2.wp-block-heading {
+  font-size: 21px;
+  font-weight: 700;
+  background: linear-gradient(transparent 50%, #29FFF2 0);
+  display: inline-block;
+}
+
+h3.wp-block-heading {
+  font-size: 21px;
+  font-weight: 700;
+  border-left: solid 3px #000000;
+  padding-left: 10px;
+}
+
+h4.wp-block-heading {
   font-size: 18px;
   font-weight: 700;
   padding: 0 3px;
   background: #29FFF2;
-}
-
-article p {
-  margin: 39px 0 39px;
 }
 
 hr {
@@ -286,10 +296,6 @@ li > ol {
 
 dt {
   font-weight: 700;
-}
-
-dd {
-  margin: 0 1.5em 1.5em;
 }
 
 /* Make sure embeds and iframes fit their containers. */
@@ -797,27 +803,6 @@ c-section
 .c-article-card__title {
   font-size: 18px;
   font-weight: 500;
-}
-
-.splide {
-  padding-left: 100px;
-  margin-left: auto;
-  overflow: hidden;
-}
-.splide__track {
-  margin-bottom: 30px;
-  padding-top: 54px;
-}
-.splide__slide img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.splide__pagination__page {
-  display: none;
-}
-.splide__pagination li {
-  display: none;
 }
 
 /* ==========================
@@ -1393,6 +1378,9 @@ contents
   margin-left: 20.35px;
   font-size: 14px;
 }
+.p-single-works-contents__single-content p {
+  margin: 39px 0 39px;
+}
 
 /* ==========================
 title
@@ -1650,6 +1638,130 @@ contents
 .p-single-blog-contents__detail-update {
   margin-left: 20.35px;
   font-size: 14px;
+}
+.p-single-blog-contents__single-content p {
+  margin: 39px 0 39px;
+}
+
+/* ==========================
+title
+=========================== */
+.p-contact-title {
+  margin-top: 15px;
+  text-align: center;
+}
+.p-contact-title__en {
+  padding: 6px 0;
+  font-size: 52px;
+  font-weight: 700;
+}
+.p-contact-title__jp {
+  display: inline-block;
+  padding: 4px 0;
+}
+@media (min-width: 1400px) {
+  .p-contact-title__jp {
+    font-size: 18px;
+  }
+}
+.p-contact-title__icon {
+  width: 93.45px;
+  height: 15.65px;
+  margin: 18px 0 57px 0;
+}
+
+/* ==========================
+contact-item
+=========================== */
+.p-contact-item {
+  margin: 60px auto;
+}
+.p-contact-item__container {
+  padding: 0 20px;
+}
+@media (min-width: 992px) {
+  .p-contact-item__container {
+    padding: 0 239px;
+  }
+}
+.p-contact-item__intro {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.714;
+}
+@media (min-width: 1200px) {
+  .p-contact-item__intro {
+    width: 60%;
+    margin: auto;
+  }
+}
+.p-contact-item__form {
+  max-width: 687px;
+  padding: 60px 0 40px;
+  margin: 0 auto;
+}
+.p-contact-item__form-top-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+.p-contact-item__form-item {
+  margin-top: 35px;
+}
+.p-contact-item__form-title {
+  margin-bottom: 13px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.p-contact-item__form input {
+  display: inline-block;
+  width: 100%;
+  height: 44px;
+  border-radius: 5px;
+}
+.p-contact-item__form-title-inline {
+  padding: 4px 8px;
+  margin-left: 17px;
+  font-size: 12px;
+  color: red;
+}
+.p-contact-item__form-footer {
+  text-align: center;
+}
+.p-contact-item__form-footer-text {
+  margin-top: 42px;
+}
+.p-contact-item__form-privacy {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  vertical-align: middle;
+}
+.p-contact-item__form-privacy-link {
+  margin-left: 10px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.p-contact-item__button {
+  display: inline-block;
+  padding: 24px 80px;
+  margin-top: 40px;
+}
+.p-contact-item__button:hover {
+  transition: 0.3s 0.3s;
+}
+.p-contact-item__input {
+  font-size: 100%;
+}
+
+textarea {
+  display: inline-block;
+  width: 100%;
+  height: 240px;
+  min-height: 122px;
+  resize: vertical;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 /* Text meant only for screen readers. */
