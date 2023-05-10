@@ -97,6 +97,14 @@
 			background-color: var.$c-text-color;
 			transition: 0.3s;
 		}
+
+		&:hover::before {
+			right: 0.5em;
+		}
+
+		&:hover::after {
+			right: 0.5em;
+		}
 	}
 }
 

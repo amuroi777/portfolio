@@ -1003,6 +1003,12 @@ fv
   background-color: #000;
   transition: 0.3s;
 }
+.p-index-profile__button:hover::before {
+  right: 0.5em;
+}
+.p-index-profile__button:hover::after {
+  right: 0.5em;
+}
 
 .p-index-counter {
   counter-reset: number 0;
