@@ -31,14 +31,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // fvのTweenアニメーション
-gsap.fromTo('.p-index-fv__job',
-  3,
+
+
+
+gsap.fromTo(
+  '.p-index-fv__job',
+  1,
   {
     x: 0,
+    y:0,
     opacity: 0,
   },
   {
-    x: 50,
+    duration: 3,
+    y: -10,
     opacity: 1,
   }
 );
@@ -48,10 +54,13 @@ gsap.fromTo(
   2,
   {
     x: 0,
+    y: 0,
     opacity: 0,
   },
   {
-    x: -100,
+    duration: 3,
+    x: 0,
+    y: -10,
     opacity: 1,
   }
 );
