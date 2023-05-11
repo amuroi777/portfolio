@@ -28,7 +28,7 @@
 						<div class="p-single-works-contents__archive-works p-works-contents__main">
 							<div class="p-single-works-contents__breadcrumb">
 								<img class="p-single-works-contents___breadcrumb-icon"
-									src="<?php echo esc_url( get_template_directory_uri() . '/img/home-icon.png' ); ?>"
+									src="<?php echo esc_url( get_template_directory_uri() . '/img/home-icon.svg' ); ?>"
 									alt="">
 								<p class="p-single-works-contents__breadcrumb-padding">></p>
 								<p class="p-single-works-contents__breadcrumb-title"><?php the_archive_title(); ?></p>
@@ -46,13 +46,13 @@
 								<div class="p-single-works-contents__detail-date">
 									<div class="p-single-works-contents__detail-post">
 										<img class="p-single-works-contents__detail-icon"
-											src="<?php echo esc_url( get_template_directory_uri() . '/img/time-icon.png' ); ?>"
+											src="<?php echo esc_url( get_template_directory_uri() . '/img/time-icon.svg' ); ?>"
 											alt="">
 										<?php echo get_the_date( 'Y/m/d' ); ?>
 									</div>
 									<div class="p-single-works-contents__detail-update">
 										<img class="p-single-works-contents__detail-icon"
-											src="<?php echo esc_url( get_template_directory_uri() . '/img/update-icon.png' ); ?>"
+											src="<?php echo esc_url( get_template_directory_uri() . '/img/update-icon.svg' ); ?>"
 											alt="">
 										<?php echo get_the_modified_date( 'Y/m/d' ); ?>
 									</div>

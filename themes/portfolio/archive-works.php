@@ -28,7 +28,7 @@
 						<main class="p-works-contents__archive-works p-works-contents__main">
 							<div class="p-works-contents__breadcrumb">
 								<img class="p-works-contents___breadcrumb-icon"
-									src="<?php echo esc_url( get_template_directory_uri() . '/img/home-icon.png' ); ?>"
+									src="<?php echo esc_url( get_template_directory_uri() . '/img/home-icon.svg' ); ?>"
 									alt="">
 								<p class="p-works-contents__breadcrumb-padding">></p>
 								<p class="p-works-contents__breadcrumb-title"><?php the_archive_title(); ?></p>
@@ -50,7 +50,7 @@
 										</h2>
 										<div class="p-works-contents__meta p-works-contents__archive-works_meta">
 											<img class="p-works-contents__time-icon"
-												src="<?php echo esc_url( get_template_directory_uri() . '/img/time-icon.png' ); ?>"
+												src="<?php echo esc_url( get_template_directory_uri() . '/img/time-icon.svg' ); ?>"
 												alt="">
 											<time
 												class="p-works-contents__meta-time"><?php the_time( 'Y.m.d' ); ?></time>
@@ -60,8 +60,8 @@
 							</article>
 
 
-								<?php endwhile; ?>
-								<?php else : ?>
+							<?php endwhile; ?>
+							<?php else : ?>
 							<p>記事がありません</p>
 							<?php endif; ?>
 

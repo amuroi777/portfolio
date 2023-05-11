@@ -26,7 +26,7 @@
 						<main class="p-blog-contents__archive-blog p-blog-contents__main">
 							<div class="p-blog-contents__breadcrumb">
 								<img class="p-blog-contents___breadcrumb-icon"
-									src="<?php echo esc_url( get_template_directory_uri() . '/img/home-icon.png' ); ?>"
+									src="<?php echo esc_url( get_template_directory_uri() . '/img/home-icon.svg' ); ?>"
 									alt="">
 								<p class="p-blog-contents__breadcrumb-padding">></p>
 								<p class="p-blog-contents__breadcrumb-title"><?php the_archive_title(); ?></p>
@@ -47,7 +47,7 @@
 										</h2>
 										<div class="p-blog-contents__meta p-blog-contents__archive-blog_meta">
 											<img class="p-blog-contents__time-icon"
-												src="<?php echo esc_url( get_template_directory_uri() . '/img/time-icon.png' ); ?>"
+												src="<?php echo esc_url( get_template_directory_uri() . '/img/time-icon.svg' ); ?>"
 												alt="">
 											<time
 												class="p-blog-contents__meta-time"><?php the_time( 'Y.m.d' ); ?></time>
