@@ -70,7 +70,7 @@ contents
     width: 760px;
     margin: auto;
     max-width: 100%;
-	padding: 0 27px;
+	  padding: 0 27px;
 
 	@include var.mq(md) {
 		padding: 0 42px;
@@ -78,6 +78,7 @@ contents
 
 	@include var.mq(lg) {
 		padding: 0;
+    max-width: 685px;
 	}
   }
 

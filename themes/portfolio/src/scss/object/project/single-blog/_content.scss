@@ -28,11 +28,15 @@ contents
     padding: 0 25px;
 
     @include var.mq(md) {
-      width: 100%;
+      width: 735px;
       max-width: 800px;
       margin: 0 auto;
       padding-bottom: 0;
     }
+
+    // @include var.mq(lg) {
+    //   max-width: 735px;
+    // }
   }
 
   &__breadcrumb {
@@ -67,7 +71,7 @@ contents
   }
 
   &__detail {
-    width: 760px;
+    width: 745px;
     margin: auto;
     max-width: 100%;
 	padding: 0 27px;
@@ -78,6 +82,7 @@ contents
 
 	@include var.mq(lg) {
 		padding: 0;
+    width: 687px;
 	}
   }
 
