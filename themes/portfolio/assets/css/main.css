@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto+Slab:wght@500;700&display=swap"); /* リセットCSS
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap"); /* リセットCSS
 ===================================== */
 html,
 body,
@@ -165,7 +165,7 @@ img {
 }
 
 body {
-  font-family: "Yu Gothic Medium", "游ゴシック Medium", Roboto slab, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", "游ゴシック", sans-serif;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", "Zen Kaku Gothic Antique", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", "游ゴシック", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.45;
@@ -246,14 +246,16 @@ h1.wp-block-heading {
   border-bottom: 2px solid #000000;
   padding-bottom: 14px;
   margin: 39px 0;
+  text-align: left;
 }
 
 h2.wp-block-heading {
   font-size: 21px;
   font-weight: 700;
   background: linear-gradient(transparent 50%, #29FFF2 0);
-  display: inline-block;
+  display: block;
   margin: 39px 0;
+  text-align: left;
 }
 
 h3.wp-block-heading {
@@ -262,6 +264,7 @@ h3.wp-block-heading {
   border-left: solid 3px #000000;
   padding-left: 10px;
   margin: 39px 0;
+  text-align: left;
 }
 
 h4.wp-block-heading {
@@ -270,6 +273,7 @@ h4.wp-block-heading {
   padding: 0 3px;
   background: #29FFF2;
   margin: 39px 0;
+  text-align: left;
 }
 
 hr {
@@ -583,6 +587,7 @@ footer
 .l-footer__contact {
   font-weight: 700;
   font-size: calc(20px + 6 * (100vw - 500px) / 600);
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
   position: relative;
 }
 .l-footer__contact::after {
@@ -802,9 +807,13 @@ c-section
   display: block;
   font-size: calc(46px + 6 * (100vw - 500px) / 600);
 }
+.c-section-title__ja {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+}
 
 .c-article-card__link {
   display: inline-block;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
 }
 .c-article-card__image-inner {
   display: inline-block;
@@ -852,6 +861,7 @@ fv
   letter-spacing: 10px;
   font-weight: 700;
   font-size: calc(20px + 6 * (100vw - 500px) / 600);
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
   position: relative;
 }
 .p-index-fv__title::before {
@@ -971,6 +981,9 @@ fv
   background-size: auto 253px;
   margin: 25px auto;
 }
+.p-index-profile__text {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+}
 .p-index-profile__button {
   display: flex;
   justify-content: flex-end;
@@ -1051,6 +1064,9 @@ fv
   .p-index-skils__p-area {
     padding: 0;
   }
+}
+.p-index-skils__text-area {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
 }
 .p-index-skils__text {
   margin-bottom: 60px;
@@ -1212,7 +1228,7 @@ contents
 @media (min-width: 768px) {
   .p-works-contents__main {
     width: 100%;
-    max-width: 642px;
+    max-width: 685px;
     margin: 0 auto;
     padding: 0;
   }
@@ -1411,6 +1427,7 @@ contents
 @media (min-width: 992px) {
   .p-single-works-contents__detail {
     padding: 0;
+    max-width: 685px;
   }
 }
 .p-single-works-contents__detail-title {
@@ -1647,7 +1664,7 @@ contents
 }
 @media (min-width: 768px) {
   .p-single-blog-contents__archive-blog {
-    width: 100%;
+    width: 735px;
     max-width: 800px;
     margin: 0 auto;
     padding-bottom: 0;
@@ -1683,7 +1700,7 @@ contents
   }
 }
 .p-single-blog-contents__detail {
-  width: 760px;
+  width: 745px;
   margin: auto;
   max-width: 100%;
   padding: 0 27px;
@@ -1696,6 +1713,7 @@ contents
 @media (min-width: 992px) {
   .p-single-blog-contents__detail {
     padding: 0;
+    width: 687px;
   }
 }
 .p-single-blog-contents__detail-title {
@@ -1794,8 +1812,7 @@ contact-item
 }
 .p-contact-item__form input {
   display: inline-block;
-  width: 100%;
-  height: 44px;
+  max-width: 100%;
   border-radius: 5px;
 }
 .p-contact-item__form-title-inline {
@@ -1841,6 +1858,21 @@ textarea {
   resize: vertical;
   border: 1px solid #ddd;
   border-radius: 5px;
+}
+
+.mwform-checkbox-field {
+  text-align: center;
+  padding-top: 30px;
+  display: block;
+}
+
+.underline {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.underline:hover {
+  text-decoration: none;
 }
 
 /* Text meant only for screen readers. */

@@ -14,7 +14,7 @@
 			<div class="p-front-section__title-inner">
 				<h2 class="c-section-title">
 					<span class="c-section-title__english">Skils</span>
-					私ができること
+					<span class="c-section-title__ja">私ができること</span>
 				</h2>
 			</div>
 			<div class="p-index-skils__p-area">

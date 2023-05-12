@@ -14,7 +14,7 @@
 			<div class="p-front-section__title-inner">
 				<h2 class="c-section-title">
 					<span class="c-section-title__english">Profile</span>
-					私について
+					<span class="c-section-title__ja">私について</span>
 				</h2>
 			</div>
 		</div>

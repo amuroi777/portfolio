@@ -1,6 +1,10 @@
+@use '../../global/' as var;
+
 .c-article-card {
 	&__link {
 		display: inline-block;
+		font-family: var.$font-family-ja;
+
 	}
 
 	&__image-inner {

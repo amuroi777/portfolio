@@ -13,7 +13,7 @@
 		<div class="p-front-section__title-inner">
 			<h2 class="c-section-title">
 				<span class="c-section-title__english">blog</span>
-				◯◯について発信しています
+				<span class="c-section-title__ja">◯◯について発信しています</span>
 			</h2>
 		</div>
 

@@ -14,7 +14,7 @@
 			<div class="p-front-section__title-inner">
 				<h2 class="c-section-title">
 					<span class="c-section-title__english">Works</span>
-					これまで制作したもの
+					<span class="c-section-title__ja">これまで制作したもの</span>
 				</h2>
 			</div>
 
