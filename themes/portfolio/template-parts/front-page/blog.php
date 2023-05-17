@@ -41,7 +41,7 @@
 									the_post_thumbnail( 'full' );
 									?>
 								<?php else : ?>
-								<img src="" alt="" class="c-article-card__noimage">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/noimage.png" alt="">
 								<?php endif; ?>
 							</picture>
 							<div class="c-article-card__content-inner">
