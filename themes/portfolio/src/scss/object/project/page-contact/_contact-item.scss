@@ -104,6 +104,14 @@ contact-item
 		}
 	}
 
+	&__input--error {
+		width: 100%;
+		padding: 0;
+		display: inline-block;
+		font-size: 90%;
+		color: red;
+		box-sizing: border-box;
+	}
 }
 
 textarea {

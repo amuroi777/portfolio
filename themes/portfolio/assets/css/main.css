@@ -1840,6 +1840,14 @@ contact-item
 .p-contact-item__button:hover {
   transition: 0.3s 0.3s;
 }
+.p-contact-item__input--error {
+  width: 100%;
+  padding: 0;
+  display: inline-block;
+  font-size: 90%;
+  color: red;
+  box-sizing: border-box;
+}
 
 textarea {
   display: inline-block;
