@@ -32,7 +32,6 @@
 
 	&__title-ja {
 		font-size: 26px;
-		font-family: var.$font-family-ja;
 
 		@include var.mq(xl) {
 		  font-size: 32px;
@@ -74,10 +73,6 @@
 		background-position: 50% 20%;
 		background-size: auto 253px;
 		margin: 25px auto;
-	}
-
-	&__text {
-		font-family: var.$font-family-ja;
 	}
 
 
