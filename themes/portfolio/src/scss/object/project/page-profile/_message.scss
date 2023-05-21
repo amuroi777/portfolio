@@ -1,0 +1,71 @@
+@use '../../../global/' as var;
+
+/* ==========================
+page-profile-message
+=========================== */
+.p-page-profile-message {
+	padding-top: 53px;
+
+	&__wrapper {
+      width: 684px;
+	  max-width: 100%;
+	  margin: 0 auto;
+	}
+
+	&__container {
+	  font-family: var.$font-family-ja;
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: 700;
+		margin-left: 22px;
+		
+
+		@include var.mq(xl) {
+			font-size: 26px;
+			margin-left: 0;
+		}
+	}
+
+	&__text-area {
+		padding: 18px 24px 64px;
+
+		@include var.mq(xl) {
+			padding: 18px 0 64px;			
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	&__button {
+		text-align: center;
+
+		@include var.mq(xl) {
+			text-align: left;
+		}
+		a {
+			display: inline-block;
+			text-align: center;
+			vertical-align: middle;
+			text-decoration: none;
+			color: #fff;
+			background: #000;
+			padding: 18px 8px;
+			font-size: 26px;
+			font-weight: 700;
+
+			&:hover {
+			color: #FFFFFF;
+			cursor: url(../../img/Ellipse24.png), auto;
+			opacity: 0.7;
+		  } 
+		}
+		
+	}
+
+	
+}

@@ -1,0 +1,83 @@
+@use '../../../global/' as var;
+
+/* ==========================
+page-profile-skils
+=========================== */
+.p-page-profile-skils {
+	
+	&__wrapper {
+		margin-left: 36px;
+
+		@include var.mq(xxl) {
+			max-width: 1200px;
+			width: 100%;
+			margin: 0 auto;	
+		}
+	}
+
+	&__text-title {
+		font-size: 26px;
+		font-weight: 700;
+		margin-left: 12px;
+	}
+
+	&__title-n {
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	&__title-main {
+		font-size: 52px;
+		font-weight: 700;
+	}
+
+	&__title-sub {
+		font-size: 26px;
+		font-weight: 700;
+	}
+
+	&__p-area {
+		padding: 0 24px 0 0;
+		width: 684px;
+		max-width: 100%;
+		margin: 62px auto;
+
+		@include var.mq(lg) {
+			padding: 0 70px 0 0;
+		}
+	}
+
+	&__text-area {
+		font-family: var.$font-family-ja;
+	}
+
+	&__text {
+		margin-bottom: 60px;
+	}
+
+	&__text-main {
+		font-size: 24px;
+		font-weight: 700;
+		margin: 29px 12px 12px 12px;
+	}
+
+	&__text-content {
+		border-top: 1px solid var.$c-text-color;
+		padding-top: 18px;
+	}
+
+	&__text-sub {
+		margin-top: 32px;
+	}
+
+	&__text-sub-title {
+      font-size: 16px;
+	  font-weight: 700;
+	  margin-bottom: 10px;
+	}
+
+	&__text-sub-content {
+      font-size: 14px;
+	  font-weight: 700;
+	}
+}

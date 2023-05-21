@@ -11,7 +11,7 @@
 <section class="p-index-profile" id="profile">
 	<div class="p-index-profile__wrapper">
 		<div class="p-index-profile__container">
-			<div class="p-front-section__title-inner">
+			<div class="c-front-section__title-inner">
 				<h2 class="c-section-title">
 					<span class="c-section-title__english">Profile</span>
 					<span class="c-section-title__ja">私について</span>
@@ -36,7 +36,7 @@
 			</div>
 
 			<div class="p-index-profile__button-area">
-				<a href="" class="p-index-profile__button">
+				<a href="<?php echo esc_url( home_url( '/profile ' ) ); ?>" class="p-index-profile__button">
 					more
 				</a>
 			</div>

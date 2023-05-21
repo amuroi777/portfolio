@@ -1,0 +1,70 @@
+@use '../../../global/' as var;
+
+/* ==========================
+page-profile-career
+=========================== */
+.p-page-profile-career {
+	padding-top: 53px;
+
+	&__wrapper {
+      width: 684px;
+	  max-width: 100%;
+	  margin: 0 auto;
+
+	}
+
+	&__container {
+	  font-family: var.$font-family-ja;
+	}
+
+	&__title {
+		font-size: 26px;
+		font-weight: 700;
+		margin-left: 12px;
+
+	}
+
+	&__timeline {
+		padding: 0 5px;
+
+		@include var.mq(lg) {
+			padding-top: 16px;
+		}
+	}
+
+	&__timeline-list {
+		padding: 8px 0;
+	}
+
+	&__timeline-content {
+		position: relative;
+		width: 100%;
+		max-width: 100%;
+		padding: 0 18px 0 30px;
+		border-left: 1px solid;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			background: #000000;
+			top: 0;
+			left: -2%;
+			border-radius: 100%;
+
+			@include var.mq(lg) {
+				left: -1%;
+			}
+		}
+
+		h3 {
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		p {
+			padding-top: 8px;
+		}
+	}
+}

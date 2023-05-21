@@ -1794,60 +1794,51 @@ contact-item
 }
 .p-contact-item__form {
   max-width: 687px;
-  padding: 60px 0 40px;
   margin: 0 auto;
 }
 .p-contact-item__form-top-title {
-  font-size: 2.4rem;
+  font-size: 26px;
   font-weight: 700;
-  text-align: center;
 }
 .p-contact-item__form-item {
   margin-top: 35px;
 }
 .p-contact-item__form-title {
   margin-bottom: 13px;
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+.p-contact-item__form-title::after {
+  position: absolute;
+  content: attr(data-sub);
+  font-size: 18px;
+  color: #FF5029;
 }
 .p-contact-item__form input {
   display: inline-block;
-  max-width: 100%;
+  height: 48px;
   border-radius: 5px;
 }
-.p-contact-item__form-title-inline {
-  padding: 4px 8px;
-  margin-left: 17px;
-  font-size: 12px;
-  color: red;
-}
-.p-contact-item__form-footer {
+.p-contact-item__form-submit {
   text-align: center;
 }
-.p-contact-item__form-footer-text {
-  margin-top: 42px;
-}
-.p-contact-item__form-privacy {
-  position: relative;
-  display: inline-block;
-  width: 22px;
-  vertical-align: middle;
-}
-.p-contact-item__form-privacy-link {
-  margin-left: 10px;
-  font-weight: 700;
-  text-decoration: underline;
+@media (min-width: 1400px) {
+  .p-contact-item__form-submit {
+    text-align: left;
+  }
 }
 .p-contact-item__button {
   display: inline-block;
-  padding: 24px 80px;
+  padding: 18px 16px;
   margin-top: 40px;
+  color: #FFFFFF;
+  background-color: #000;
+  font-size: 26px;
 }
 .p-contact-item__button:hover {
   transition: 0.3s 0.3s;
-}
-.p-contact-item__input {
-  font-size: 100%;
 }
 
 textarea {
@@ -1860,21 +1851,360 @@ textarea {
   border-radius: 5px;
 }
 
-.mwform-checkbox-field {
-  text-align: center;
-  padding-top: 30px;
-  display: block;
+input[type=text] {
+  width: 228px;
 }
 
-.underline {
-  text-decoration: underline;
+input[type=email] {
+  width: 250px;
+}
+
+.error {
+  width: 100%;
+  padding: 0;
+  display: inline-block;
+  font-size: 90%;
+  color: red;
+  box-sizing: border-box;
+}
+
+/* ==========================
+ page-profile
+=========================== */
+.p-page-profile {
+  margin-top: 77px;
+}
+.p-page-profile__wrapper {
+  margin-left: 36px;
+}
+@media (min-width: 1400px) {
+  .p-page-profile__wrapper {
+    max-width: 100%;
+    width: 684px;
+    margin: 0 auto;
+  }
+}
+.p-page-profile__title-en {
+  font-size: 52px;
+  display: block;
+}
+@media (min-width: 1200px) {
+  .p-page-profile__title-en {
+    font-size: calc(90px + 6 * (100vw - 500px) / 600);
+  }
+}
+.p-page-profile__title-ja {
+  font-size: 26px;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+}
+@media (min-width: 1200px) {
+  .p-page-profile__title-ja {
+    font-size: 32px;
+  }
+}
+.p-page-profile__title-n {
+  font-size: 20px;
+  font-weight: 700;
+}
+.p-page-profile__title-main {
+  font-size: 52px;
+  font-weight: 700;
+}
+.p-page-profile__title-sub {
+  font-size: 26px;
+  font-weight: 700;
+}
+.p-page-profile__p-area {
+  width: 684px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+}
+.p-page-profile__img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  background-position: 50% 20%;
+  background-size: auto 253px;
+  margin: 25px auto;
+}
+.p-page-profile__text {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+}
+.p-page-profile__button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2em 4.5em;
+  color: #333;
+  transition: 0.3s;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+.p-page-profile__button::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 1em;
+  transform: translateY(calc(-50% - 2px)) rotate(30deg);
+  width: 12px;
+  height: 2px;
+  background-color: #000;
+  transition: 0.3s;
+}
+.p-page-profile__button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+  width: 73px;
+  height: 2px;
+  background-color: #000;
+  transition: 0.3s;
+}
+.p-page-profile__button:hover::before {
+  right: 0.5em;
+}
+.p-page-profile__button:hover::after {
+  right: 0.5em;
+}
+
+/* ==========================
+page-profile-skils
+=========================== */
+.p-page-profile-skils__wrapper {
+  margin-left: 36px;
+}
+@media (min-width: 1400px) {
+  .p-page-profile-skils__wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.p-page-profile-skils__text-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-left: 12px;
+}
+.p-page-profile-skils__title-n {
+  font-size: 20px;
+  font-weight: 700;
+}
+.p-page-profile-skils__title-main {
+  font-size: 52px;
+  font-weight: 700;
+}
+.p-page-profile-skils__title-sub {
+  font-size: 26px;
+  font-weight: 700;
+}
+.p-page-profile-skils__p-area {
+  padding: 0 24px 0 0;
+  width: 684px;
+  max-width: 100%;
+  margin: 62px auto;
+}
+@media (min-width: 992px) {
+  .p-page-profile-skils__p-area {
+    padding: 0 70px 0 0;
+  }
+}
+.p-page-profile-skils__text-area {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+}
+.p-page-profile-skils__text {
+  margin-bottom: 60px;
+}
+.p-page-profile-skils__text-main {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 29px 12px 12px 12px;
+}
+.p-page-profile-skils__text-content {
+  border-top: 1px solid #000;
+  padding-top: 18px;
+}
+.p-page-profile-skils__text-sub {
+  margin-top: 32px;
+}
+.p-page-profile-skils__text-sub-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.p-page-profile-skils__text-sub-content {
+  font-size: 14px;
   font-weight: 700;
 }
 
-.underline:hover {
-  text-decoration: none;
+/* ==========================
+page-profile-career
+=========================== */
+.p-page-profile-career {
+  padding-top: 53px;
+}
+.p-page-profile-career__wrapper {
+  width: 684px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.p-page-profile-career__container {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+}
+.p-page-profile-career__title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-left: 12px;
+}
+.p-page-profile-career__timeline {
+  padding: 0 5px;
+}
+@media (min-width: 992px) {
+  .p-page-profile-career__timeline {
+    padding-top: 16px;
+  }
+}
+.p-page-profile-career__timeline-list {
+  padding: 8px 0;
+}
+.p-page-profile-career__timeline-content {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 18px 0 30px;
+  border-left: 1px solid;
+}
+.p-page-profile-career__timeline-content::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #000000;
+  top: 0;
+  left: -2%;
+  border-radius: 100%;
+}
+@media (min-width: 992px) {
+  .p-page-profile-career__timeline-content::before {
+    left: -1%;
+  }
+}
+.p-page-profile-career__timeline-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.p-page-profile-career__timeline-content p {
+  padding-top: 8px;
 }
 
+/* ==========================
+page-profile-message
+=========================== */
+.p-page-profile-message {
+  padding-top: 53px;
+}
+.p-page-profile-message__wrapper {
+  width: 684px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.p-page-profile-message__container {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+}
+.p-page-profile-message__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 22px;
+}
+@media (min-width: 1200px) {
+  .p-page-profile-message__title {
+    font-size: 26px;
+    margin-left: 0;
+  }
+}
+.p-page-profile-message__text-area {
+  padding: 18px 24px 64px;
+}
+@media (min-width: 1200px) {
+  .p-page-profile-message__text-area {
+    padding: 18px 0 64px;
+  }
+}
+.p-page-profile-message__text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.p-page-profile-message__button {
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .p-page-profile-message__button {
+    text-align: left;
+  }
+}
+.p-page-profile-message__button a {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #fff;
+  background: #000;
+  padding: 18px 8px;
+  font-size: 26px;
+  font-weight: 700;
+}
+.p-page-profile-message__button a:hover {
+  color: #FFFFFF;
+  cursor: url(../../img/Ellipse24.png), auto;
+  opacity: 0.7;
+}
+
+/* ==========================
+ p-page-profile-works
+=========================== */
+.p-page-profile-works {
+  overflow: hidden;
+  margin: 95px 0 126px 0;
+}
+.p-page-profile-works__wrapper {
+  margin-left: 36px;
+}
+@media (min-width: 1400px) {
+  .p-page-profile-works__wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.p-page-profile-works__title-inner {
+  font-weight: 700;
+}
+.p-page-profile-works__xscroll {
+  overflow-x: scroll;
+  margin: 0 calc(50% - 50vw);
+  /*スクロールバー非表示（IE・Edge）*/
+  -ms-overflow-style: none;
+  /*スクロールバー非表示（Firefox）*/
+  scrollbar-width: none;
+}
+.p-page-profile-works__xscroll::-webkit-scrollbar {
+  display: none;
+}
+.p-page-profile-works__container {
+  margin-top: 54px;
+  display: flex;
+  width: 150vw;
+  gap: 24px;
+  margin-left: calc(69% - 50vw);
+}
+.p-page-profile-works__column {
+  width: 330px;
+}
 /* Text meant only for screen readers. */
 .screen-reader-text {
   border: 0;

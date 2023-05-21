@@ -1,18 +1,41 @@
 @use '../../../global/' as var;
 
 /* ==========================
- profile
+ page-profile
 =========================== */
-.p-index-profile {
+.p-page-profile {
 	margin-top: 77px;
 	
 	&__wrapper {
 		margin-left: 36px;
 
 		@include var.mq(xxl) {
-			max-width: 1200px;
-			width: 100%;
+			max-width: 100%;
+			width: 684px;
 			margin: 0 auto;	
+		}
+	}
+
+	&__title-inner {
+
+	}
+
+	&__title-en {
+		font-size: 52px;
+		display: block;
+
+		@include var.mq(xl) {
+			
+		    font-size: calc(90px + 6 * (100vw - 500px) / 600);
+		}
+	}
+
+	&__title-ja {
+		font-size: 26px;
+		font-family: var.$font-family-ja;
+
+		@include var.mq(xl) {
+		  font-size: 32px;
 		}
 	}
 
@@ -102,8 +125,4 @@
 			right: 0.5em;
 		}
 	}
-}
-
-.p-index-counter {
-	counter-reset: number 0;
 }
