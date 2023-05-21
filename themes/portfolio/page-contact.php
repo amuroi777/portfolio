@@ -26,31 +26,44 @@
 	<section class="p-contact-item">
 		<div class="p-contact-item__wrapper">
 			<div class="p-contact-item__container">
-				<p class="p-contact-item__intro">
-					下記のフォームからお問い合わせ内容をご記入ください。<br>
-
 				<div class="p-contact-item__form">
-					<h2 class="p-contact-item__form-top-title">お問い合わせ</h2>
-					<form id="js-form" action="" class="p-contact-item__form-lists">
+					<h2 class="p-contact-item__form-top-title">お問い合わせフォーム</h2>
+					<form id="js-form" action="" class="p-contact-item__form-lists validationForm" novalidate>
 						<dl class="p-contact-item__form-list">
-							<?php echo do_shortcode( '[mwform_formkey key="55"]' ); ?>
-						</dl>
-						<div class="p-contact-item__form-footer">
-							<p class="p-contact-item__form-footer-text">
-								<label class="p-contact-item__form-privacy">
-									<input type="checkbox" name="" class="p-contact-item__form-privacy-input">
-									<span class="p-contact-item__form-privacy-part"></span>
-								</label>
-								<a href="" class="p-contact-item__form-privacy-link" target="_blank">個人情報保護方針</a>に同意します。
-							</p>
-							<div class="p-contact-item__form-submit">
-								<button id="js-submit" class="p-contact-item__button" -submit type="submit">送　信</button>
+							<div class="p-contact-item__form-item">
+								<dt class="p-contact-item__form-title" data-sub="*">
+									お名前
+								</dt>
+								<dd class="p-contact-item__input">
+									<input class="required maxlength" data-maxlength="10" type="text" name="name"
+										placeholder="お名前太郎">
+								</dd>
 							</div>
+							<div class="p-contact-item__form-item">
+								<dt class="p-contact-item__form-title" data-sub="*">
+									メールアドレス
+								</dt>
+								<dd class="p-contact-item__input">
+									<input class="email" type="email" id="email" name="email"
+										placeholder="bcd@amuro.com" required>
+								</dd>
+							</div>
+
+							<div class="p-contact-item__form-item">
+								<dt class="p-contact-item__form-title">
+									お問合せ内容
+								</dt>
+								<dd class="p-contact-item__input">
+									<textarea class="query" placeholder="お問合せ内容を入力してください。"></textarea>
+								</dd>
+							</div>
+						</dl>
+						<div class="p-contact-item__form-submit">
+							<button id="#js-submit" class="p-contact-item__button" -submit type="submit">送信する</button>
 						</div>
 					</form>
 				</div>
 			</div>
-		</div>
 	</section>
 
 	<!-- ./contact-item -->

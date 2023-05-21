@@ -17,8 +17,7 @@ contact-item
       padding: 0 239px;
     }
   }
-
-  &__intro {
+&__intro {
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 1.714;
@@ -28,10 +27,9 @@ contact-item
       margin: auto;
     }
   }
-
+  
   &__form {
     max-width: 687px;
-    padding: 60px 0 40px;
     margin: 0 auto;
 
     @include var.mq(sp) {
@@ -41,9 +39,8 @@ contact-item
   }
 
   &__form-top-title {
-    font-size: 2.4rem;
+    font-size: 26px;
     font-weight: 700;
-    text-align: center;
 
     @include var.mq(sp) {
       margin-bottom: 80px;
@@ -56,8 +53,17 @@ contact-item
 
   &__form-title {
     margin-bottom: 13px;
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: 700;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      position: absolute;
+      content: attr(data-sub);
+      font-size: 18px;
+      color: var.$c-data-sub;
+    }
 
     @include var.mq(sp) {
       font-size: 1.4rem;
@@ -66,58 +72,25 @@ contact-item
 
   &__form input {
     display: inline-block;
-    max-width: 100%;
+    height: 48px;
     border-radius: 5px;
   }
 
-  &__form-title-inline {
-    padding: 4px 8px;
-    margin-left: 17px;
-    font-size: 12px;
-    color: red;
-    // background: var.$c-accent-pink;
-  }
-
-  &__form-footer {
+  &__form-submit {
     text-align: center;
-  }
 
-  &__form-footer-text {
-    margin-top: 42px;
-
-    @include var.mq(sp) {
-      margin-left: 23px;
-    }
-  }
-
-  &__form-privacy {
-    position: relative;
-    display: inline-block;
-    width: 22px;
-    vertical-align: middle;
-
-    @include var.mq(sp) {
-      margin-left: 0;
-    }
-  }
-
-  &__form-privacy-link {
-    margin-left: 10px;
-    font-weight: 700;
-    text-decoration: underline;
-
-    @include var.mq(sp) {
-      font-size: 14px;
+    @include var.mq(xxl) {
+      text-align: left;
     }
   }
 
   &__button {
     display: inline-block;
-    padding: 24px 80px;
+    padding: 18px 16px;
     margin-top: 40px;
-    // color: var.$c-main;
-    // background: var.$bg-thin;
-    // border: 1px solid var.$c-main;
+    color: var.$c-white;
+    background-color: #000;
+    font-size: 26px;
 
     @include var.mq(sp) {
       padding: 26px 126px;
@@ -126,14 +99,8 @@ contact-item
     }
 
     &:hover {
-      // background: var.$c-main;
-      // color: var.$c-main-thin;
       transition: 0.3s 0.3s;
     }
-  }
-
-  &__input {
-    font-size: 100%;
   }
 }
 
@@ -151,16 +118,21 @@ textarea {
   }
 }
 
-.mwform-checkbox-field {
-  text-align: center;
-  padding-top: 30px;
-  display: block;
+input[type="text"] {
+  width: 228px;
+
+} 
+input[type="email"] {
+  width: 250px;
+} 
+
+.error {
+  width : 100%;
+  padding: 0;
+  display: inline-block;
+  font-size: 90%;
+  color: red;
+  box-sizing: border-box;
 }
 
-.underline {
-	text-decoration: underline;
-  font-weight: 700;
-}
-.underline:hover {
-	text-decoration: none;
-}
+
