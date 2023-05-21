@@ -33,8 +33,7 @@
 							<a href="#skils" class="l-footer-nav__link">Skils</a>
 						</li>
 						<li class="l-footer-nav__item">
-							<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>"
-								class="l-footer-nav__link">Contact</a>
+							<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="l-footer-nav__link">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -50,20 +49,10 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="script.js" defer></script>
+
 
 <?php wp_footer(); ?>
 
-<?php if ( is_page( 'contact' ) ) : ?>
-<script>
-$(function() {
-	//規約チェックボックスの文言変更
-	$('.js-mw-checkbox .mwform-checkbox-field-text').html(
-		'<a href="<?php echo esc_url( home_url( 'privacy-policy/' ) ); ?>" target="_blank" rel="noopener noreferrer" class="underline">個人情報保護方針</a>に同意する'
-	);
-});
-</script>
-<?php endif; ?>
 
 </body>
 

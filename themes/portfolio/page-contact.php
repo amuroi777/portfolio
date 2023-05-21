@@ -35,8 +35,7 @@
 									お名前
 								</dt>
 								<dd class="p-contact-item__input">
-									<input class="required maxlength" data-maxlength="10" type="text" name="name"
-										placeholder="お名前太郎">
+									<input class="required maxlength" data-maxlength="10" type="text" name="name" placeholder="お名前太郎">
 								</dd>
 							</div>
 							<div class="p-contact-item__form-item">
@@ -44,8 +43,7 @@
 									メールアドレス
 								</dt>
 								<dd class="p-contact-item__input">
-									<input class="email" type="email" id="email" name="email"
-										placeholder="bcd@amuro.com" required>
+									<input class="email" type="email" id="email" name="email" placeholder="bcd@amuro.com" required>
 								</dd>
 							</div>
 
@@ -67,5 +65,5 @@
 	</section>
 
 	<!-- ./contact-item -->
-
-	<?php get_footer(); ?>
+</main>
+<?php get_footer(); ?>

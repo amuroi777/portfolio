@@ -19,13 +19,8 @@
 	<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 	<title><?php echo bloginfo( 'name' ); ?></title>
 
-	<link rel="stylesheet" href="./assets/css/main.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:wght@600&family=Roboto:wght@100;300;400;700&family=Satisfy&display=swap"
-		rel="stylesheet">
-
 
 	<?php wp_head(); ?>
 </head>
@@ -49,14 +44,13 @@
 							<a href="#skils" class="l-header-nav__link">Skils</a>
 						</li>
 						<li class="l-header-nav__item">
-							<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>"
-								class="l-header-nav__link">Contact</a>
+							<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="l-header-nav__link">Contact</a>
 						</li>
 					</ul>
 				</nav>
 				<div class="l-header-hamburger">
-					<button type="button" id="js-buttonHamburger" class="c-button p-hamburger"
-						aria-controls="global-nav" aria-expanded="false">
+					<button type="button" id="js-buttonHamburger" class="c-button p-hamburger" aria-controls="global-nav"
+						aria-expanded="false">
 						<span class="l-header-hamburger__line1"></span>
 						<span class="l-header-hamburger__line2"></span>
 						<span class="l-header-hamburger__line3"></span>

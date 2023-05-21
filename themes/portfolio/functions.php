@@ -141,6 +141,7 @@ add_action( 'widgets_init', 'portfolio_widgets_init' );
  * Enqueue scripts and styles.
  */
 function portfolio_scripts() {
+	wp_enqueue_style( 'google-webfont-style', 'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap', array(), '1.0.0', 'all' );
 	wp_enqueue_style( 'my', get_template_directory_uri() . '/assets/css/main.css', array(), filemtime( get_theme_file_path( './assets/css/main.css' ) ), 'all' );
 	wp_enqueue_script( 'my', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), filemtime( get_theme_file_path( 'js/script.js' ) ), true );
 	wp_style_add_data( 'my', 'rtl', 'replace' );
