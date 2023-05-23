@@ -76,6 +76,18 @@ contact-item
     border-radius: 5px;
   }
 
+  &__input {
+    
+    &--error {
+      width : 100%;
+      padding: 0;
+      display: inline-block;
+      font-size: 90%;
+      color: red;
+      box-sizing: border-box;
+    }
+  }
+
   &__form-submit {
     text-align: center;
 
@@ -125,14 +137,3 @@ input[type="text"] {
 input[type="email"] {
   width: 250px;
 } 
-
-.error {
-  width : 100%;
-  padding: 0;
-  display: inline-block;
-  font-size: 90%;
-  color: red;
-  box-sizing: border-box;
-}
-
-

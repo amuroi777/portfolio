@@ -69,7 +69,7 @@ gsap.fromTo(
       //.validationForm を指定した最初の form 要素を取得
       const validationForm = document.querySelector('.validationForm');
       if (validationForm) {
-        const errorClassName = 'error';
+        const errorClassName = 'p-contact-item__input--error';
 
         //required クラスを指定された要素の集まり
         const requiredElems = document.querySelectorAll('.required');

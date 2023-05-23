@@ -1808,6 +1808,14 @@ contact-item
   height: 48px;
   border-radius: 5px;
 }
+.p-contact-item__input--error {
+  width: 100%;
+  padding: 0;
+  display: inline-block;
+  font-size: 90%;
+  color: red;
+  box-sizing: border-box;
+}
 .p-contact-item__form-submit {
   text-align: center;
 }
@@ -1844,15 +1852,6 @@ input[type=text] {
 
 input[type=email] {
   width: 250px;
-}
-
-.error {
-  width: 100%;
-  padding: 0;
-  display: inline-block;
-  font-size: 90%;
-  color: red;
-  box-sizing: border-box;
 }
 
 /* ==========================
