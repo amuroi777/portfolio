@@ -13,10 +13,10 @@
 <section class="p-page-profile" id="profile">
 	<div class="p-page-profile__wrapper">
 		<div class="p-page-profile__container">
-			<div class="p-page-profile__title-inner">
+			<hgroup class="p-page-profile__title-inner">
 				<span class="p-page-profile__title-en">Profile</span>
 				<span class="p-page-profile__title-ja">私について</span>
-			</div>
+			</hgroup>
 		</div>
 		<div class="p-page-profile__p-area">
 			<div class="p-page-profile__img">

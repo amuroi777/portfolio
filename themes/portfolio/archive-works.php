@@ -14,8 +14,10 @@
 	<main>
 		<div class="p-works-title">
 			<div class="p-works-title__wrapper">
-				<h2 class="p-works-title__en font-italic">Works</h2>
-				<p class="p-works-title__jp">ワークス</p>
+				<hgroup>
+					<h2 class="p-works-title__en font-italic">Works</h2>
+					<p class="p-works-title__jp">ワークス</p>
+				</hgroup>
 				<div class="p-works-title__icon">
 				</div>
 

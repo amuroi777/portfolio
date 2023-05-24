@@ -13,8 +13,10 @@
 <main>
 	<div class="p-contact-title">
 		<div class="p-contact-title__wrapper">
-			<h2 class="p-contact-title__en font-italic">contact</h2>
-			<p class="p-contact-title__jp">お問い合わせ</p>
+			<hgroup>
+				<h2 class="p-contact-title__en">contact</h2>
+				<p class="p-contact-title__jp">お問い合わせ</p>
+			</hgroup>
 			<p>
 				<img class="p-contact-title__icon"
 					src="<?php echo esc_url( get_template_directory_uri() . '/img/circle.png' ); ?>">

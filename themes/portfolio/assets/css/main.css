@@ -1862,12 +1862,23 @@ input[type=email] {
 }
 .p-page-profile__wrapper {
   margin-left: 36px;
+  max-width: 100%;
+  width: 684px;
+  margin: 0 auto;
 }
 @media (min-width: 1400px) {
   .p-page-profile__wrapper {
     max-width: 100%;
     width: 684px;
     margin: 0 auto;
+  }
+}
+.p-page-profile__container {
+  margin-left: 20px;
+}
+@media (min-width: 992px) {
+  .p-page-profile__container {
+    margin-left: 0;
   }
 }
 .p-page-profile__title-en {
@@ -2035,7 +2046,12 @@ page-profile-career
 .p-page-profile-career__title {
   font-size: 26px;
   font-weight: 700;
-  margin-left: 12px;
+  margin-left: 18px;
+}
+@media (min-width: 992px) {
+  .p-page-profile-career__title {
+    margin-left: 0;
+  }
 }
 .p-page-profile-career__timeline {
   padding: 0 5px;

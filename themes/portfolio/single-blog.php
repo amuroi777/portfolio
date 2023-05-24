@@ -14,8 +14,10 @@
 	<main>
 		<div class="p-single-blog-title">
 			<div class="p-single-blog-title__wrapper">
-				<h2 class="p-single-blog-title__en font-italic">blog</h2>
-				<p class="p-single-blog-title__jp">ブログ</p>
+				<hgroup>
+					<h2 class="p-single-blog-title__en font-italic">blog</h2>
+					<p class="p-single-blog-title__jp">ブログ</p>
+				</hgroup>
 				<div class="p-single-blog-title__icon">
 				</div>
 			</div>

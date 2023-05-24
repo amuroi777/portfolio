@@ -10,7 +10,6 @@ page-profile-career
       width: 684px;
 	  max-width: 100%;
 	  margin: 0 auto;
-
 	}
 
 	&__container {
@@ -19,7 +18,11 @@ page-profile-career
 	&__title {
 		font-size: 26px;
 		font-weight: 700;
-		margin-left: 12px;
+		margin-left: 18px;
+
+		@include var.mq(lg) {
+			margin-left: 0;
+		}
 
 	}
 

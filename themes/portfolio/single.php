@@ -7,34 +7,37 @@
  * @package portfolio
  */
 
-get_header();
+
 ?>
 
-<main id="primary" class="site-main">
+<?php get_header(); ?>
 
-	<?php
-	while ( have_posts() ) :
-		the_post();
+<div id="container" class="wrapper">
+	<main>
+		<div class="p-single-works-title">
+			<div class="p-single-works-title__wrapper">
+				<h2 class="p-single-works-title__en font-italic">Works</h2>
+				<p class="p-single-works-title__jp">ワークス</p>
+				<p>
+					<img class="p-single-works-title__icon"
+						src="<?php echo esc_url( get_template_directory_uri() . '/img/circle.png' ); ?>" alt="">
+				</p>
+			</div>
+		</div>
+	</main>
 
-		get_template_part( 'template-parts/content', get_post_type() );
-
-		the_post_navigation(
-			array(
-				'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'portfolio' ) . '</span> <span class="nav-title">%title</span>',
-				'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'portfolio' ) . '</span> <span class="nav-title">%title</span>',
-			)
-		);
-
-		// If comments are open or we have at least one comment, load up the comment template.
-		if ( comments_open() || get_comments_number() ) :
-			comments_template();
-		endif;
-
-		endwhile; // End of the loop.
-	?>
-
-</main><!-- #main -->
-
-<?php
-get_sidebar();
-get_footer();
+	<section class="p-single-works-contents">
+		<div class="p-single-works-contents__wrapper">
+			<div class="p-single-works-contents__container">
+				<main class="p-single-works-contents__archive-works p-works-contents__main">
+					<div class="p-single-works-contents__breadcrumb">
+						<img class="p-single-works-contents___breadcrumb-icon"
+							src="<?php echo esc_url( get_template_directory_uri() . '/img/home-icon.png' ); ?>" alt="">
+						<p class="p-single-works-contents__breadcrumb-padding">></p>
+						<p class="p-single-works-contents__breadcrumb-title"><?php the_archive_title(); ?></p>
+					</div>
+				</main>
+			</div>
+		</div>
+	</section>
+	<?php get_footer(); ?>

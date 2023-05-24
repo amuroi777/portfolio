@@ -8,11 +8,22 @@
 	
 	&__wrapper {
 		margin-left: 36px;
+		max-width: 100%;
+		width: 684px;
+		margin: 0 auto;
 
 		@include var.mq(xxl) {
 			max-width: 100%;
 			width: 684px;
 			margin: 0 auto;	
+		}
+	}
+
+	&__container {
+		margin-left: 20px;
+		
+		@include var.mq(lg) {
+			margin-left: 0;
 		}
 	}
 
