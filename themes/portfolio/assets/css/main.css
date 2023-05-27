@@ -1826,11 +1826,37 @@ contact-item
 }
 .p-contact-item__button {
   display: inline-block;
-  padding: 18px 16px;
+  padding: 18px 40px 16px 0;
   margin-top: 40px;
   color: #FFFFFF;
   background-color: #000;
   font-size: 26px;
+  max-width: 186px;
+  width: 186px;
+  position: relative;
+}
+.p-contact-item__button::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: 18%;
+  left: 70%;
+  margin: auto;
+  background-color: #FF5029;
+}
+.p-contact-item__button::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  top: 30%;
+  left: 75%;
+  margin: auto;
+  background: url(../../img/arrow-icon.png) no-repeat center center/cover;
 }
 .p-contact-item__button:hover {
   transition: 0.3s 0.3s;
