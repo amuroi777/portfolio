@@ -1835,6 +1835,14 @@ contact-item
 .p-contact-item__button:hover {
   transition: 0.3s 0.3s;
 }
+.p-contact-item__contact-message {
+  text-align: center;
+  margin-top: 60px;
+  display: none;
+}
+.p-contact-item__error {
+  color: #f00;
+}
 
 textarea {
   display: inline-block;
