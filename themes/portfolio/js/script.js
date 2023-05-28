@@ -63,142 +63,129 @@ gsap.fromTo(
 );
 
 
-
-document.addEventListener('DOMContentLoaded', () => {
-  //.validationForm を指定した最初の form 要素を取得
-  const validationForm = document.querySelector('.validationForm');
-  if (validationForm) {
+// お問合せフォーム動作
+$(document).ready(function () {
+  const $validationForm = $('.validationForm');
+  if ($validationForm.length) {
     const errorClassName = 'p-contact-item__input--error';
 
-    //required クラスを指定された要素の集まり
-    const requiredElems = document.querySelectorAll('.required');
-    //email クラスを指定された要素の集まり
-    const emailElems = document.querySelectorAll('.email');
-    //maxlength クラスを指定された要素の集まり
-    const maxlengthElems = document.querySelectorAll('.maxlength');
-    //query クラスを指定された要素の集まり
-    const queryElems = document.querySelectorAll('.query');
+    const $requiredElems = $('.required');
+    const $emailElems = $('.email');
+    const $maxlengthElems = $('.maxlength');
+    const $queryElems = $('.query');
 
-    //エラーメッセージを表示する span 要素を生成して親要素に追加する関数
-    //elem ：対象の要素
-    //errorMessage ：表示するエラーメッセージ
+    // エラーメッセージを作成
     const createError = (elem, errorMessage) => {
-      const errorSpan = document.createElement('span');
-      errorSpan.classList.add(errorClassName);
-
-      //aria-live 属性を設定
-      errorSpan.setAttribute('aria-live', 'polite');
-      //引数に指定されたエラーメッセージを設定
-      errorSpan.textContent = errorMessage;
-      //elem の親要素の子要素として追加
-      elem.parentNode.appendChild(errorSpan);
+      const $errorSpan = $('<span>').addClass(errorClassName).attr('aria-live', 'polite').text(errorMessage);
+      elem.parent().append($errorSpan);
     };
 
-    //form 要素の submit イベントを使った送信時の処理
-    validationForm.addEventListener('submit', (e) => {
-      //エラーを表示する要素を全て取得して削除（初期化）
-      const errorElems = validationForm.querySelectorAll('.' + errorClassName);
-      errorElems.forEach((elem) => {
-        elem.remove();
-      });
+    // エラーメッセージを削除
+    const removeErrors = () => {
+      $validationForm.find('.' + errorClassName).remove();
+    };
 
-      //.required を指定した要素を検証
-      requiredElems.forEach((elem) => {
-        //値（value プロパティ）の前後の空白文字を削除
-        const elemValue = elem.value.trim();
-        //値が空の場合はエラーを表示してフォームの送信を中止
+    // 送信成功時
+    const showSuccessMessage = () => {
+      const $successElem = $('#js-success');
+      $successElem.css('display', 'block').hide().slideDown();
+    };
+
+    const validateForm = (e) => {
+      removeErrors();
+
+      let hasError = false;
+
+      // 必須項目のバリデーション
+      $requiredElems.each(function () {
+        const $elem = $(this);
+        const elemValue = $elem.val().trim();
         if (elemValue.length === 0) {
-          createError(elem, '＊名前を入力してください。');
-          e.preventDefault();
+          createError($elem, '＊名前を入力してください。');
+          hasError = true;
         }
       });
 
-      //.email を指定した要素を検証
-      emailElems.forEach((elem) => {
-        //値（value プロパティ）の前後の空白文字を削除
-        const elemValue = elem.value.trim();
-        //値が空の場合はエラーを表示してフォームの送信を中止
+      // メールアドレスのバリデーション
+      $emailElems.each(function () {
+        const $elem = $(this);
+        const elemValue = $elem.val().trim();
         if (elemValue.length === 0) {
-          createError(elem, '＊メールアドレスを入力してください。');
-          e.preventDefault();
+          createError($elem, '＊メールアドレスを入力してください。');
+          hasError = true;
         }
       });
 
-      //.query を指定した要素を検証
-      queryElems.forEach((elem) => {
-        //値（value プロパティ）の前後の空白文字を削除
-        const elemValue = elem.value.trim();
-        //値が空の場合はエラーを表示してフォームの送信を中止
+      // お問合せ内容のバリデーション
+      $queryElems.each(function () {
+        const $elem = $(this);
+        const elemValue = $elem.val().trim();
         if (elemValue.length === 0) {
-          createError(elem, '＊お問合せ内容を入力して下さい。');
-          e.preventDefault();
+          createError($elem, '＊お問合せ内容を入力して下さい。');
+          hasError = true;
         }
       });
 
-      //.email を指定した要素を検証
-      emailElems.forEach((elem) => {
-        //Email の検証に使用する正規表現パターン
+      // メールフォーマットのバリデーション
+      $emailElems.each(function () {
+        const $elem = $(this);
         const pattern = /^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/iu;
-        //値が空でなければ
-        if (elem.value !== '') {
-          //test() メソッドで値を判定し、マッチしなければエラーを表示してフォームの送信を中止
-          if (!pattern.test(elem.value)) {
-            createError(elem, '＊正しいメールアドレスを入力してください。');
-            e.preventDefault();
+        const elemValue = $elem.val().trim();
+        if (elemValue !== '') {
+          if (!pattern.test(elemValue)) {
+            createError($elem, '＊正しいメールアドレスを入力してください。');
+            hasError = true;
           }
         }
       });
 
-      //.maxlength を指定した要素を検証
-      maxlengthElems.forEach((elem) => {
-        //data-maxlength 属性から最大文字数を取得
-        const maxlength = elem.dataset.maxlength;
-        //または const maxlength = elem.getAttribute('data-maxlength');
-        //値が空でなければ
-        if (elem.value !== '') {
-          //値が maxlength を超えていればエラーを表示してフォームの送信を中止
-          if (elem.value.length > maxlength) {
-            createError(elem, maxlength + '文字以内でご入力ください');
-            e.preventDefault();
+      // 文字制限のバリデーション
+      $maxlengthElems.each(function () {
+        const $elem = $(this);
+        const maxlength = $elem.data('maxlength');
+        const elemValue = $elem.val().trim();
+        if (elemValue !== '') {
+          if (elemValue.length > maxlength) {
+            createError($elem, maxlength + '文字以内でご入力ください');
+            hasError = true;
           }
         }
       });
 
-      //エラーの最初の要素を取得
-      const errorElem = validationForm.querySelector('.' + errorClassName);
-      //エラーがあればエラーの最初の要素の位置へスクロール
-      if (errorElem) {
-        const errorElemOffsetTop = errorElem.offsetTop;
-        window.scrollTo({
-          top: errorElemOffsetTop - 40, //40px 上に位置を調整
-          //スムーススクロール
-          behavior: 'smooth',
+      if (hasError) {
+        e.preventDefault();
+
+        const $errorElem = $validationForm.find('.' + errorClassName).first();
+        if ($errorElem.length) {
+          const errorElemOffsetTop = $errorElem.offset().top;
+          $('html, body').animate({ scrollTop: errorElemOffsetTop - 40 }, 'slow');
+        }
+      } else {
+        e.preventDefault();
+
+        // googleform
+        const formData = $validationForm.serialize();
+        $.ajax({
+          url: $validationForm.attr('action'),
+          data: formData,
+          type: 'POST',
+          dataType: 'xml',
+          statusCode: {
+            0: function () {
+              // 送信に成功した時の処理
+              $validationForm.slideUp();
+              showSuccessMessage();
+            },
+            200: function () {
+              // 送信に失敗した時の処理
+              $validationForm.slideUp();
+              $('#js-error').slideDown();
+            },
+          },
         });
       }
-    });
+    };
+
+    $validationForm.on('submit', validateForm);
   }
 });
-
-//googleForm
-let $form = $('#js-form')
-$form.submit(function (e) {
-  $.ajax({
-    url: $form.attr('action'),
-    data: $form.serialize(),
-    type: "POST",
-    dataType: "xml",
-    statusCode: {
-      0: function () {
-        //送信に成功した時の処理
-        $form.slideUp();
-        $( '#js-success' ).slideDown()
-      },
-      200: function () {
-        //送信に失敗した時の処理
-        $form.slideUp();
-        $('#js-error').slideDown();
-      }
-    }
-  });
-  return false;
-})
