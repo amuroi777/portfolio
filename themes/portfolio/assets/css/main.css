@@ -1723,6 +1723,9 @@ contents
   margin-left: 20.35px;
   font-size: 14px;
 }
+.p-single-blog-contents__single-content {
+  text-align: left;
+}
 .p-single-blog-contents__single-content p + p {
   margin-top: 39px;
 }
