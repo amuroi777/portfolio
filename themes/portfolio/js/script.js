@@ -189,3 +189,23 @@ $(document).ready(function () {
     $validationForm.on('submit', validateForm);
   }
 });
+
+//smoothscroll
+$('a[href^="#"]').click(function() {
+    //移動速度を指定
+    let speed =500;
+    // hrefで指定されたidを取得
+    let id = $(this).attr("href");
+    //idの値が#飲みだったらターゲットをhtmlタグにしてトップへ戻るようにする
+    let target = $("#" == id ? "html" : id);
+    //ページのトップを基準にターゲットの位置を指定
+    let position = $(target).offset().top;
+    // ターゲットの位置までspeedの速度で移動　body
+    $("html, body").animate(
+        {
+            scrollTop: position - $('#js-header').outerHeight()
+        },
+        speed
+    );
+    return false;
+});

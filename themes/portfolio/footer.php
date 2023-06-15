@@ -27,10 +27,12 @@
 							<a href="<?php echo esc_url( home_url() ); ?>" class="l-footer-nav__link">Home</a>
 						</li>
 						<li class="l-footer-nav__item">
-							<a href="#profile" class="l-footer-nav__link">Profile</a>
+							<a href="<?php echo esc_url( home_url( 'profile' ) ); ?>"
+								class="l-footer-nav__link">Profile</a>
 						</li>
 						<li class="l-footer-nav__item">
-							<a href="#skils" class="l-footer-nav__link">Skils</a>
+							<a href="<?php echo esc_url( home_url( '#skils' ) ); ?>"
+								class="l-footer-nav__link">Skils</a>
 						</li>
 						<li class="l-footer-nav__item">
 							<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>"

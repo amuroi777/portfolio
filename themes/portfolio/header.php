@@ -28,22 +28,24 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<header class="l-header">
+	<header id="#js-header" class="l-header">
 		<div class="l-header__wrapper">
 			<div class="l-header__container">
-				<h1 class="l-header__title">
-					AKIHITO MUROI
-				</h1>
+				<h1 class="l-header__title"><a href="<?php echo esc_url( home_url() ); ?>">
+						AKIHITO MUROI
+					</a></h1>
 				<nav class="l-header-nav">
 					<ul class="l-header-nav__container">
 						<li class="l-header-nav__item">
 							<a href="<?php echo esc_url( home_url() ); ?>" class="l-header-nav__link">Home</a>
 						</li>
 						<li class="l-header-nav__item">
-							<a href="#profile" class="l-header-nav__link">Profile</a>
+							<a href="<?php echo esc_url( home_url( '#profile' ) ); ?>"
+								class="l-header-nav__link">Profile</a>
 						</li>
 						<li class="l-header-nav__item">
-							<a href="#skils" class="l-header-nav__link">Skils</a>
+							<a href="<?php echo esc_url( home_url( '#skils' ) ); ?>"
+								class="l-header-nav__link">Skils</a>
 						</li>
 						<li class="l-header-nav__item">
 							<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>"
