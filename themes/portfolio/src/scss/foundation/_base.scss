@@ -44,6 +44,13 @@ a {
 	cursor: pointer;
 }
 
+blockquote {
+	background-color: var.$c-thin-color;
+	border: 1px solid var.$c-thin-border-color;
+	padding: 0 18px 45px;
+	position: relative;
+}
+
 .util-ttl {
 	font-size: 3rem;
 	font-weight: 600;
@@ -164,3 +171,9 @@ h4.wp-block-heading {
 	margin: 39px 0;
 	text-align: left;
 }
+
+.wp-block-image {
+	margin: 35px 0;
+}
+
+

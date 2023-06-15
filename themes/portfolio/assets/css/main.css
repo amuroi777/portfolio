@@ -193,6 +193,13 @@ a {
   cursor: pointer;
 }
 
+blockquote {
+  background-color: #f8f9ff;
+  border: 1px solid #4865b2;
+  padding: 0 18px 45px;
+  position: relative;
+}
+
 .util-ttl {
   font-size: 3rem;
   font-weight: 600;
@@ -273,6 +280,10 @@ h4.wp-block-heading {
   background: #29FFF2;
   margin: 39px 0;
   text-align: left;
+}
+
+.wp-block-image {
+  margin: 35px 0;
 }
 
 hr {
@@ -969,9 +980,9 @@ fv
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-color: #D9D9D9;
+  background-image: url(../../img/profile.jpg);
   background-position: 50% 20%;
-  background-size: auto 253px;
+  background-size: cover;
   margin: 25px auto;
 }
 .p-index-profile__button {
@@ -1707,6 +1718,7 @@ contents
   font-size: 32px;
   font-weight: 700;
   padding: 32px 0 18px;
+  text-align: left;
 }
 .p-single-blog-contents__detail-date {
   display: flex;
@@ -1726,7 +1738,7 @@ contents
 .p-single-blog-contents__single-content {
   text-align: left;
 }
-.p-single-blog-contents__single-content p + p {
+.p-single-blog-contents__single-content p + p:not(first-child) {
   margin-top: 39px;
 }
 
@@ -1739,7 +1751,7 @@ title
 }
 .p-contact-title__en {
   padding: 6px 0;
-  font-size: 52px;
+  font-size: 69px;
   font-weight: 700;
 }
 .p-contact-title__jp {
@@ -1959,9 +1971,9 @@ input[type=email] {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-color: #D9D9D9;
+  background-image: url(../../img/profile.jpg);
   background-position: 50% 20%;
-  background-size: auto 253px;
+  background-size: cover;
   margin: 25px auto;
 }
 .p-page-profile__button {

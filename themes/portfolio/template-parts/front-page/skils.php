@@ -21,18 +21,14 @@
 				<div class="p-index-skils__text-area">
 					<div class="p-index-skils__text">
 						<div class="p-index-skils__text-main">静的マークアップ</div>
-						<p class="p-index-skils__text-content"> あなたは場合とこうその発展院としてのの時を聞かますまし。
-							もう今日で自覚者はけっしてある盲従ですだろばかりを抱いでいですがは附与叱らますないで、それだけにも云わなかっでなない。
-							<br><br>
-							金力になるですのもほとんど前がまあたうた。とうてい嘉納さんを講演がたいっそ煩悶にしませ個人この学校私か講演をというご意味まいただますば
+						<p class="p-index-skils__text-content">
+							デザインやワイヤーフレームをもとに、HTML、CSS、JavaScript、GSAPなどの技術を使用してコーディングしモバイルファーストなサイトを構築します。
 						</p>
 					</div>
 					<div class="p-index-skils__text-bottom">
 						<div class="p-index-skils__text-main">WordPress CMS設計</div>
-						<p class="p-index-skils__text-content"> あなたは場合とこうその発展院としてのの時を聞かますまし。
-							もう今日で自覚者はけっしてある盲従ですだろばかりを抱いでいですがは附与叱らますないで、それだけにも云わなかっでなない。
-							<br><br>
-							金力になるですのもほとんど前がまあたうた。とうてい嘉納さんを講演がたいっそ煩悶にしませ個人この学校私か講演をというご意味まいただますば
+						<p class="p-index-skils__text-content">
+							WordPressでの開発にあたり、テーマとプラグインの選定や設計に注力しパフォーマンスやセキュリティにも重点を置きサイトの高速化や脆弱性を考慮しながらサイトの開発にあたります。
 						</p>
 					</div>
 					<div class="p-index-skils__text-sub">

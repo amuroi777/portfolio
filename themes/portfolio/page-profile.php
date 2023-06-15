@@ -20,7 +20,7 @@
 		</div>
 		<div class="p-page-profile__p-area">
 			<div class="p-page-profile__img">
-				<img src="../../img/about-bg.jpg" alt="">
+				<!-- <img src="../../img/profile.jpg" alt=""> -->
 			</div>
 			<div class="p-page-profile__text-area">
 				<p class="p-page-profile__text">
@@ -43,23 +43,17 @@
 					<ul class="p-page-profile-career__timeline">
 						<li class="p-page-profile-career__timeline-list">
 							<div class="p-page-profile-career__timeline-content">
-								<h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
-								<p>詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について
+								<h3>2020年プログラミングについて制作開始</h3>
+								<p>保有スキル:・FLOCSSのCSS設計からのマークアップ・npm
+									scriptsを用いたタスクランナー・WordPressによるweb開発（ノーコードではなく、プラグイン、テーマ開発まで。）・javascript
+									・html,csss,scssを使ったマークアップ
 								</p>
 							</div>
 						</li>
 						<li class="p-page-profile-career__timeline-list">
 							<div class="p-page-profile-career__timeline-content">
-								<h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
-								<p>詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について
-								</p>
-							</div>
-						</li>
-						<li class="p-page-profile-career__timeline-list">
-							<div class="p-page-profile-career__timeline-content">
-								<h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
-								<p>詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について詳細について
-								</p>
+								<h3>comming soon</h3>
+								<p>comming soon</p>
 							</div>
 						</li>
 					</ul>
@@ -76,18 +70,14 @@
 							<h3 class="p-page-profile-skils__text-title">スキル</h3>
 							<div class="p-page-profile-skils__text">
 								<div class="p-page-profile-skils__text-main">静的マークアップ</div>
-								<p class="p-page-profile-skils__text-content"> あなたは場合とこうその発展院としてのの時を聞かますまし。
-									もう今日で自覚者はけっしてある盲従ですだろばかりを抱いでいですがは附与叱らますないで、それだけにも云わなかっでなない。
-									<br><br>
-									金力になるですのもほとんど前がまあたうた。とうてい嘉納さんを講演がたいっそ煩悶にしませ個人この学校私か講演をというご意味まいただますば
+								<p class="p-page-profile-skils__text-content">
+									デザインやワイヤーフレームをもとに、HTML、CSS、JavaScript、GSAPなどの技術を使用してコーディングしモバイルファーストなサイトを構築します。
 								</p>
 							</div>
 							<div class="p-page-profile-skils__text-bottom">
 								<div class="p-page-profile-skils__text-main">WordPress CMS設計</div>
-								<p class="p-page-profile-skils__text-content"> あなたは場合とこうその発展院としてのの時を聞かますまし。
-									もう今日で自覚者はけっしてある盲従ですだろばかりを抱いでいですがは附与叱らますないで、それだけにも云わなかっでなない。
-									<br><br>
-									金力になるですのもほとんど前がまあたうた。とうてい嘉納さんを講演がたいっそ煩悶にしませ個人この学校私か講演をというご意味まいただますば
+								<p class="p-page-profile-skils__text-content">
+									WordPressでの開発にあたり、テーマとプラグインの選定や設計に注力しパフォーマンスやセキュリティにも重点を置きサイトの高速化や脆弱性を考慮しながらサイトの開発にあたります。
 								</p>
 							</div>
 							<div class="p-page-profile-skils__text-sub">
