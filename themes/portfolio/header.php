@@ -72,11 +72,13 @@
 		<nav class="l-drawer__content">
 			<ul class="l-drawer__content-items">
 				<li class="l-drawer__content-item"><a href="<?php echo esc_url( home_url() ); ?>">Home</a></li>
-				<li class="l-drawer__content-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Profile</a>
+				<li class="l-drawer__content-item"><a
+						href="<?php echo esc_url( home_url( '#profile' ) ); ?>">Profile</a>
 				</li>
-				<li class="l-drawer__content-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Skils</a>
+				<li class="l-drawer__content-item"><a href="<?php echo esc_url( home_url( '#skils' ) ); ?>">Skils</a>
 				</li>
-				<li class="l-drawer__content-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Contact</a></li>
+				<li class="l-drawer__content-item"><a
+						href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Contact</a></li>
 			</ul>
 		</nav>
 	</section>
