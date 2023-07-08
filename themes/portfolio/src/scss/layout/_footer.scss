@@ -134,7 +134,6 @@ footer
 			border: 2px solid var.$c-base-color;
 	        cursor: url(../../img/Ellipse24.png), auto;
 			padding: 0 4px;
-			transform: scale(0.8);
 		}
 
 		@include var.mq(lg) {
